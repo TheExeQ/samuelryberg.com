@@ -1,13 +1,18 @@
-import Image from "next/image";
-import Vipertrace from "@public/projects/vipertrace/vipertrace.png";
+import Image, { StaticImageData } from "next/image";
 
-export default function Hero() {
+interface Props {
+  projectName: string;
+  poster: StaticImageData;
+  url: string;
+}
+
+export default function Hero({ projectName, poster, url }: Props) {
   return (
     <div className="relative h-screen flex justify-center items-center overflow-hidden">
       <div className="pointer-events-none">
         <Image
-          alt="Vipertrace"
-          src={Vipertrace}
+          alt={projectName}
+          src={poster}
           quality={100}
           fill
           priority
@@ -15,11 +20,11 @@ export default function Hero() {
         />
       </div>
       <div className="text-center z-10">
-        <h1 className="font-bold text-5xl uppercase">Vipertrace</h1>
+        <h1 className="font-bold text-5xl uppercase">{projectName}</h1>
         <div className="p-4">
           <a
             className="hover:underline hover:font-semibold"
-            href="https://samuelryberg.com/projects/vipertrace"
+            href={url}
             target="_blank"
           >
             Read more
