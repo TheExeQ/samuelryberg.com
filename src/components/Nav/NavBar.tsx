@@ -1,9 +1,12 @@
 import Link from "next/link";
 
-function NavBar() {
+export default function Navbar() {
   return (
     <div className="fixed w-full p-8 flex items-center justify-between z-10">
-      <a className="text-2xl uppercase" href="https://samuelryberg.com/">
+      <a
+        className="bg-gradient-to-r from-indigo-400 to-green-500 bg-clip-text text-transparent text-2xl font-bold uppercase"
+        href="https://samuelryberg.com/"
+      >
         SR
       </a>
       <div className="flex items-center">
@@ -29,5 +32,3 @@ function NavBar() {
     </div>
   );
 }
-
-export default NavBar;
