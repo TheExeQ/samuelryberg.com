@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import { FC } from "react";
 
 interface FeaturedProps {
   projectName: string;
@@ -6,7 +7,7 @@ interface FeaturedProps {
   url: string;
 }
 
-const Hero = ({ projectName, poster, url }: FeaturedProps) => (
+const Hero: FC<FeaturedProps> = ({ projectName, poster, url }) => (
   <div className="relative h-screen flex justify-center items-center overflow-hidden">
     <div className="pointer-events-none">
       <Image

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { FC, PropsWithChildren } from "react";
 import "@/styles/globals.css";
 
 import { meta } from "@/constants/config";
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   ],
 };
 
-const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
+const RootLayout: FC<PropsWithChildren> = ({ children }) => (
   <html lang="en">
     <body className={inter.className}>
       <NavBar />
