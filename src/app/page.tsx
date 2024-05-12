@@ -1,4 +1,4 @@
-import { NavBar, Hero } from "@/layouts";
+import { Hero } from "@/layouts";
 import Vipertrace from "@public/projects/vipertrace/vipertrace.png";
 
 const featuredProject = {
@@ -10,7 +10,6 @@ const featuredProject = {
 export default function Home() {
   return (
     <>
-      <NavBar />
       <Hero {...featuredProject} />
     </>
   );

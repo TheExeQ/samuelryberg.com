@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function NavBar() {
   return (
-    <div className="fixed w-full p-4 flex items-center justify-between z-10">
+    <div className="fixed w-full p-8 flex items-center justify-between z-10">
       <a className="text-2xl uppercase" href="https://samuelryberg.com/">
         SR
       </a>
