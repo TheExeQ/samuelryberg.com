@@ -2,26 +2,24 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@styles/globals.css";
 
+import { meta } from "@/constants/config";
+import { Navbar } from "@/components";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Samuel Ryberg | Official Website",
-  description: "Explore Samuel Ryberg's projects, skills, and experience.",
-  keywords: [
-    "Samuel Ryberg",
-    "Game",
-    "Developer",
-    "Programmer",
-    "Engineer",
-    "Portfolio",
-    "C++",
-    "C#",
-    "Unity",
-    "Unreal Engine",
-  ],
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
   authors: [
-    { name: "Samuel Ryberg", url: "https://www.linkedin.com/in/samuelryberg/" },
-    { name: "ExeQ", url: "https://github.com/theexeq" },
+    {
+      name: meta.author,
+      url: `https://www.linkedin.com/in/${meta.accounts.linkedin.username}`,
+    },
+    {
+      name: "ExeQ",
+      url: `https://github.com/${meta.accounts.github.username}`,
+    },
   ],
 };
 
@@ -32,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar />
+        <main className="min-h-screen">{children}</main>
+      </body>
     </html>
   );
 }
