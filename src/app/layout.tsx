@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "@styles/globals.css";
+import "@/styles/globals.css";
 
 import { meta } from "@/constants/config";
-import { Navbar } from "@/components";
+import { NavBar } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,17 +23,13 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        <main className="min-h-screen">{children}</main>
-      </body>
-    </html>
-  );
-}
+const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
+  <html lang="en">
+    <body className={inter.className}>
+      <NavBar />
+      <main className="min-h-screen">{children}</main>
+    </body>
+  </html>
+);
+
+export default RootLayout;

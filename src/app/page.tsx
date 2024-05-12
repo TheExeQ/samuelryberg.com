@@ -7,10 +7,10 @@ const featuredProject = {
   url: "https://www.samuelryberg.com/projects/vipertrace",
 };
 
-export default function Home() {
-  return (
-    <>
-      <Hero {...featuredProject} />
-    </>
-  );
-}
+const Home = () => (
+  <>
+    <Hero {...featuredProject} />
+  </>
+);
+
+export default Home;
