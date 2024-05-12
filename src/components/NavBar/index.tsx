@@ -1,6 +1,7 @@
 import Link from "next/link";
+import { FC } from "react";
 
-const NavBar = () => (
+const NavBar: FC = () => (
   <div className="fixed w-full p-8 flex items-center justify-between z-10">
     <a
       className="bg-gradient-to-r from-purple-500 to-pink-200 bg-clip-text text-transparent text-2xl font-bold uppercase"

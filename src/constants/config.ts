@@ -1,4 +1,6 @@
-export const meta = {
+import { Meta, Footer, NavLink, Project } from "@/types";
+
+export const meta: Meta = {
   title: "Samuel Ryberg | Official Website",
   author: "Samuel Ryberg",
   description: "Explore Samuel Ryberg's projects, skills, and experience.",
@@ -37,7 +39,7 @@ export const header = {
   description: meta.description,
 };
 
-export const projects = [
+export const projects: Array<Project> = [
   {
     name: "Potion Run",
     studio: "Mythical Studios",
@@ -120,7 +122,7 @@ export const projects = [
   },
 ];
 
-export const nav = [
+export const nav: Array<NavLink> = [
   {
     title: "Home",
     href: "/",
@@ -139,7 +141,7 @@ export const nav = [
   },
 ];
 
-export const footer = {
+export const footer: Footer = {
   categories: [
     {
       title: "Important Links",

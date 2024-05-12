@@ -1,3 +1,4 @@
+import { FC } from "react";
 import { Hero } from "@/layouts";
 import Vipertrace from "@public/projects/vipertrace/vipertrace.png";
 
@@ -7,7 +8,7 @@ const featuredProject = {
   url: "https://www.samuelryberg.com/projects/vipertrace",
 };
 
-const Home = () => (
+const Home: FC = () => (
   <>
     <Hero {...featuredProject} />
   </>
