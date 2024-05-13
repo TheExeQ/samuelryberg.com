@@ -11,7 +11,7 @@ const Footer = () => (
           </span>
         </Link>
 
-        <p className="my-3 text-gray-700 dark:text-neutral-300">
+        <p className="my-3 text-neutral-300">
           Created using{" "}
           <Link href="https://nextjs.org" target="_blank">
             Next.js
@@ -19,11 +19,8 @@ const Footer = () => (
         </p>
       </div>
       {footer.categories.map((category, index) => (
-        <div
-          key={index}
-          className="col-span-1 text-gray-700 dark:text-neutral-300"
-        >
-          <p className="mt-3 font-semibold text-gray-800 dark:text-white sm:mb-3 sm:mt-0 ">
+        <div key={index} className="col-span-1 text-neutral-300">
+          <p className="mt-3 font-semibold text-white sm:mb-3 sm:mt-0 ">
             {category.title}
           </p>
           <div>
@@ -32,7 +29,7 @@ const Footer = () => (
                 key={index}
                 href={link.href}
                 target={link.target || "_self"}
-                className="mt-2 block duration-100 hover:text-gray-700 hover:underline motion-reduce:transition-none dark:hover:text-gray-300"
+                className="mt-2 block duration-100 hover:underline motion-reduce:transition-none hover:text-gray-300"
               >
                 {link.title}
               </Link>
@@ -41,7 +38,7 @@ const Footer = () => (
         </div>
       ))}
     </div>
-    <div className="mt-5 flex justify-end text-center text-gray-700 dark:text-neutral-300">
+    <div className="mt-5 flex justify-end text-center text-neutral-300">
       <p className="font-semibold">
         &copy; 2023 - {new Date().getFullYear()} Samuel Ryberg, All rights
         reserved.
