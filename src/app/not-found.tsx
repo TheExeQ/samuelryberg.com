@@ -7,7 +7,7 @@ const NotFound: FC = () => (
         404 - Page not found
       </h1>
       <p className="mt-3 text-center text-neutral-800 dark:text-neutral-200">
-        We're sorry — we can't find the page you're looking for.
+        We&apos;re sorry — we can&apos;t find the page you&apos;re looking for.
       </p>
       <a href="/" className="underline mx-auto">
         Go home
