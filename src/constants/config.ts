@@ -169,7 +169,7 @@ export const footer: Footer = {
       links: [
         {
           title: "Github",
-          href: `https://github.com/${meta.accounts.github.username}`,
+          href: meta.accounts.github.repo,
           target: "_blank",
         },
         {

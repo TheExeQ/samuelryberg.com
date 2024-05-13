@@ -4,7 +4,7 @@ import { FC, PropsWithChildren } from "react";
 import "@/styles/globals.css";
 
 import { meta } from "@/constants/config";
-import { NavBar } from "@/components";
+import { NavBar, Footer } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +29,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
     <body className={inter.className}>
       <NavBar />
       <main className="min-h-screen">{children}</main>
+      <Footer />
     </body>
   </html>
 );
