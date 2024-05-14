@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import { FC, PropsWithChildren } from "react";
 import "@/styles/globals.css";
 
+import { ThemeProvider } from "@/components/ThemeProvider";
+
 import { meta } from "@/constants/config";
 import { NavBar, Footer } from "@/components";
 
@@ -28,7 +30,15 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
   <html lang="en">
     <body className={inter.className}>
       <NavBar />
-      <main className="min-h-screen">{children}</main>
+      <main className="dark min-h-screen">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </main>
       <Footer />
     </body>
   </html>
