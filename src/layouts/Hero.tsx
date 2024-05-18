@@ -8,7 +8,7 @@ interface FeaturedProps {
 }
 
 const Hero: FC<FeaturedProps> = ({ projectName, poster, url }) => (
-  <div className="relative h-screen flex justify-center items-center overflow-hidden">
+  <section className="relative h-screen flex justify-center items-center overflow-hidden">
     <div className="pointer-events-none">
       <Image
         alt={projectName}
@@ -31,7 +31,7 @@ const Hero: FC<FeaturedProps> = ({ projectName, poster, url }) => (
         </a>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Hero;

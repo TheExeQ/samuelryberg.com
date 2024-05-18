@@ -131,6 +131,10 @@ export const nav: Array<NavLink> = [
     title: "My work",
     href: "/work",
   },
+  // {
+  //   title: "Music",
+  //   href: "/music",
+  // },
   {
     title: "Blog",
     href: "/blog",
@@ -154,13 +158,13 @@ export const footer: Footer = {
           title: "My work",
           href: "/work",
         },
+        // {
+        //   title: "Music",
+        //   href: "/music",
+        // },
         {
           title: "Blog",
           href: "/blog",
-        },
-        {
-          title: "Music",
-          href: "/music",
         },
       ],
     },
