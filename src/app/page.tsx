@@ -1,5 +1,6 @@
 import { FC } from "react";
-import { Hero } from "@/layouts";
+import { Hero, About } from "@/layouts";
+
 import Vipertrace from "@public/projects/vipertrace/vipertrace.png";
 
 const featuredProject = {
@@ -11,6 +12,7 @@ const featuredProject = {
 const Home: FC = () => (
   <>
     <Hero {...featuredProject} />
+    <About />
   </>
 );
 
