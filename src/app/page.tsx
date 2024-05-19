@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Hero, About } from "@/layouts";
+import { Hero, About, Technologies } from "@/layouts";
 
 import Vipertrace from "@public/projects/vipertrace/vipertrace.png";
 
@@ -13,6 +13,7 @@ const Home: FC = () => (
   <>
     <Hero {...featuredProject} />
     <About />
+    <Technologies />
   </>
 );
 

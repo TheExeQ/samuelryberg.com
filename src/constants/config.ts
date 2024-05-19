@@ -1,4 +1,4 @@
-import { Meta, Footer, NavLink, Project } from "@/types";
+import { Meta, Footer, NavLink, Technology } from "@/types";
 
 export const meta: Meta = {
   title: "Samuel Ryberg | Official Website",
@@ -39,86 +39,63 @@ export const header = {
   description: meta.description,
 };
 
-export const projects: Array<Project> = [
+export const technologies: Array<Technology> = [
   {
-    name: "Potion Run",
-    studio: "Mythical Studios",
-
-    platform: "Windows",
-    productionTime: "6 weeks (50%)",
-
-    poster: "",
-    trailer: "",
+    name: "C++",
   },
   {
-    name: "Hungry House",
-    studio: "Smooth Brain Studios",
-
-    platform: "Windows",
-    productionTime: "6 weeks (50%)",
-
-    poster: "",
-    trailer: "",
+    name: "C#",
   },
   {
-    name: "Cute 'em up",
-    studio: "AGT",
-
-    platform: "Windows",
-    productionTime: "6 weeks (50%)",
-
-    poster: "",
-    trailer: "",
+    name: "Unity",
+    href: "https://unity.com/",
   },
   {
-    name: "Bard Knight",
-    studio: "Grump Studios",
-
-    platform: "Windows",
-    productionTime: "8 weeks (50%)",
-
-    poster: "",
-    trailer: "",
+    name: "Unreal",
+    href: "https://unrealengine.com/",
   },
   {
-    name: "Bo's Morning",
-    studio: "Sad Centaur",
-
-    platform: "Windows",
-    productionTime: "8 weeks (50%)",
-
-    poster: "",
-    trailer: "",
+    name: "Perforce",
+    href: "https://www.perforce.com/",
   },
   {
-    name: "Spite: The Yellow Plague",
-    studio: "Coinflip Studios",
-
-    platform: "Windows",
-    productionTime: "14 weeks (50%)",
-
-    poster: "",
-    trailer: "",
+    name: "Git",
+    href: "https://git-scm.com/",
   },
   {
-    name: "Ekaya & Pebbles",
-    studio: "Coinflip Studios",
-
-    platform: "Windows",
-    productionTime: "14 weeks (50%)",
-
-    poster: "",
-    trailer: "",
+    name: "GitHub",
+    href: "https://github.com/",
   },
   {
-    name: "Vipertrace",
-    studio: "Coinflip Studios",
-
-    platform: "Windows",
-    productionTime: "8 weeks (100%)",
-
-    poster: "",
-    trailer: "",
+    name: "NodeJS",
+    href: "https://nodejs.org/",
+  },
+  {
+    name: "React",
+    href: "https://react.dev/",
+  },
+  {
+    name: "NextJS",
+    href: "https://nextjs.org/",
+  },
+  {
+    name: "TailwindCSS",
+    href: "https://tailwindcss.com/",
+  },
+  {
+    name: "JavaScript",
+  },
+  {
+    name: "TypeScript",
+    href: "https://www.typescriptlang.org/",
+  },
+  {
+    name: "Docker",
+    href: "https://docker.com/",
+  },
+  {
+    name: "Vercel",
+    href: "https://vercel.com/",
   },
 ];
 
