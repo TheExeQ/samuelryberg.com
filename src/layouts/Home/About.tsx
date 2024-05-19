@@ -11,8 +11,8 @@ const About: FC = () => {
             <br />
           </span>
           <span>
-            I'm a Gameplay, Tools and Backend Engineer from Sweden who enjoys
-            creating games.{" "}
+            I&apos;m a Gameplay, Tools and Backend Engineer from Sweden who
+            enjoys creating games.{" "}
           </span>
           <span>
             In my free time, I like to cook and make/learn music.
@@ -20,13 +20,13 @@ const About: FC = () => {
             <br />
           </span>
           <span>
-            I'm always looking to learn new things and expand my knowledge in
-            game development.{" "}
+            I&apos;m always looking to learn new things and expand my knowledge
+            in game development.{" "}
           </span>
           <span>
-            I'm fascinated by the constantly evolving technology in this field
-            and I'm always eager to stay on top of the latest trends and
-            techniques.
+            I&apos;m fascinated by the constantly evolving technology in this
+            field and I&apos;m always eager to stay on top of the latest trends
+            and techniques.
           </span>
         </div>
       </div>
