@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FC, useState } from "react";
 
 import { AiOutlineMenu } from "react-icons/ai";
-import { twMerge } from "tailwind-merge";
+import { cn } from "@/lib/utils";
 
 import { nav } from "@/constants/config";
 
@@ -34,7 +34,7 @@ const NavBar: FC = () => {
       <div className="p-8 flex items-center justify-between z-10 relative">
         <div>
           <Link
-            className={twMerge(
+            className={cn(
               !menuOpen ? "block" : "hidden",
               "bg-gradient-to-r from-purple-500 to-pink-200 bg-clip-text text-transparent text-2xl font-bold uppercase cursor-pointer"
             )}
