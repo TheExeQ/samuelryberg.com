@@ -7,7 +7,7 @@ const Technologies: FC = () => {
     <section className="bg-secondary py-4">
       <div className="m-auto max-w-2xl">
         <h2 className="text-5xl text-center pb-4">Skills</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mx-2">
           {technologies.map((tech, index) => (
             <div
               key={index}
