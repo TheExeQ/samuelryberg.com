@@ -4,9 +4,9 @@ export const projects: Array<Project> = [
   {
     name: "Potion Run",
     studio: "Mythical Studios",
+    date: new Date("2021-10-29"),
 
     platform: "Windows",
-    productionTime: "6 weeks (50%)",
 
     poster: "",
     trailer: "",
@@ -14,9 +14,9 @@ export const projects: Array<Project> = [
   {
     name: "Hungry House",
     studio: "Smooth Brain Studios",
+    date: new Date("2021-12-17"),
 
     platform: "Windows",
-    productionTime: "6 weeks (50%)",
 
     poster: "",
     trailer: "",
@@ -24,9 +24,9 @@ export const projects: Array<Project> = [
   {
     name: "Cute 'em up",
     studio: "AGT",
+    date: new Date("2022-02-25"),
 
     platform: "Windows",
-    productionTime: "6 weeks (50%)",
 
     poster: "",
     trailer: "",
@@ -34,9 +34,9 @@ export const projects: Array<Project> = [
   {
     name: "Bard Knight",
     studio: "Grump Studios",
+    date: new Date("2022-04-22"),
 
     platform: "Windows",
-    productionTime: "8 weeks (50%)",
 
     poster: "",
     trailer: "",
@@ -44,9 +44,9 @@ export const projects: Array<Project> = [
   {
     name: "Bo's Morning",
     studio: "Sad Centaur",
+    date: new Date("2022-06-17"),
 
     platform: "Windows",
-    productionTime: "8 weeks (50%)",
 
     poster: "",
     trailer: "",
@@ -54,9 +54,9 @@ export const projects: Array<Project> = [
   {
     name: "Spite: The Yellow Plague",
     studio: "Coinflip Studios",
+    date: new Date("2022-12-09"),
 
     platform: "Windows",
-    productionTime: "14 weeks (50%)",
 
     poster: "",
     trailer: "",
@@ -64,9 +64,9 @@ export const projects: Array<Project> = [
   {
     name: "Ekaya & Pebbles",
     studio: "Coinflip Studios",
+    date: new Date("2023-04-14"),
 
     platform: "Windows",
-    productionTime: "14 weeks (50%)",
 
     poster: "",
     trailer: "",
@@ -74,9 +74,9 @@ export const projects: Array<Project> = [
   {
     name: "Vipertrace",
     studio: "Coinflip Studios",
+    date: new Date("2023-06-16"),
 
     platform: "Windows",
-    productionTime: "8 weeks (100%)",
 
     poster: "",
     trailer: "",
