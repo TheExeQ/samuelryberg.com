@@ -6,7 +6,7 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 import { meta } from "@/constants/config";
-import { NavBar, Footer } from "@/components";
+import { NavBar, Footer } from "@/layouts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +30,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
   <html lang="en">
     <body className={inter.className}>
       <NavBar />
-      <main className="dark min-h-screen">
+      <main className="min-h-screen">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

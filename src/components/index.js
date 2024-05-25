@@ -1,4 +1,6 @@
-import NavBar from "./NavBar/NavBar";
-import Footer from "./Footer/Footer";
+import Hero from "./Home/Hero";
+import About from "./Home/About";
+import Technologies from "./Home/Technologies";
+import Contact from "./Contact";
 
-export { NavBar, Footer };
+export { Hero, About, Technologies, Contact };

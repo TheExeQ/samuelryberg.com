@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const About: FC = () => {
   return (
-    <section className="flex justify-center py-4 bg-secondary">
+    <section className="flex justify-center py-4">
       <div className="px-4">
         <h2 className="text-5xl text-center pb-4">About me</h2>
         <div className="prose dark:prose-invert text-center">

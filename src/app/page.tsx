@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Hero, About, Technologies } from "@/layouts";
+import { Hero, About, Technologies } from "@/components";
 
 import Vipertrace from "@public/projects/vipertrace/vipertrace.png";
 
