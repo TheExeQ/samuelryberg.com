@@ -1,6 +1,6 @@
 import Hero from "./Home/Hero";
 import About from "./Home/About";
 import Technologies from "./Home/Technologies";
-import Contact from "./Contact";
+import ContactForm from "./ContactForm";
 
-export { Hero, About, Technologies, Contact };
+export { Hero, About, Technologies, ContactForm };
