@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Hero } from "@/components";
 
 const Home: FC = () => (
-  <main className="relative overflow-hidden min-h-screen">
+  <main className="relative min-h-screen overflow-hidden">
     <div className="max-w-7xl">
       <Hero />
     </div>
