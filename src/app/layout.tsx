@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
-import { Inter } from "next/font/google";
 import { FC, PropsWithChildren } from "react";
 
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { meta } from "@/constants/config";
 
 import "@/styles/globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: meta.title,
