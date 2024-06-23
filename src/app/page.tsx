@@ -1,7 +1,12 @@
 import { FC } from "react";
+import { Hero } from "@/components";
 
-import Vipertrace from "@public/projects/vipertrace/vipertrace.png";
-
-const Home: FC = () => <>Home</>;
+const Home: FC = () => (
+  <main className="relative overflow-hidden min-h-screen">
+    <div className="max-w-7xl">
+      <Hero />
+    </div>
+  </main>
+);
 
 export default Home;
