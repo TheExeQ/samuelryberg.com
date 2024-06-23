@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GeistSans } from "geist/font/sans";
 import { Inter } from "next/font/google";
 import { FC, PropsWithChildren } from "react";
 
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => (
   <html lang="en" suppressHydrationWarning>
-    <body className={inter.className}>
+    <body className={GeistSans.className}>
       <ThemeProvider
         attribute="class"
         defaultTheme="dark"
