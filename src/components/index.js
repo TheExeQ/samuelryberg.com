@@ -1,5 +1,6 @@
 import Hero from "./Hero/Hero";
-import { Spotlight } from "./ui/Spotlight";
 import { MagicButton } from "./MagicButton";
+import { Spotlight } from "./ui/Spotlight";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
-export { Hero, Spotlight, MagicButton };
+export { Hero, MagicButton, Spotlight, TextGenerateEffect };

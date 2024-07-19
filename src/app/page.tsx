@@ -3,7 +3,7 @@ import { Hero } from "@/components";
 
 const Home: FC = () => (
   <main className="relative min-h-screen overflow-hidden">
-    <div className="max-w-7xl">
+    <div className="mx-auto max-w-7xl">
       <Hero />
     </div>
   </main>
