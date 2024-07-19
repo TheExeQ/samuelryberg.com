@@ -32,7 +32,7 @@ const Hero: FC = () => {
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />
 
       {/* Description */}
-      <div className="relative z-10 my-20 flex justify-center">
+      <div className="relative z-10 my-56 flex justify-center">
         <div className="lg:max-w[60vw] flex max-w-[89vw] flex-col items-center justify-center md:max-w-2xl">
           <h2 className="max-w-80 text-center text-xs uppercase tracking-widest text-blue-100">
             Featured Project

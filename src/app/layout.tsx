@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { FC, PropsWithChildren } from "react";
 
+import { FloatingNav } from "@/components";
+
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { meta } from "@/constants/config";
 
@@ -31,6 +33,14 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
         defaultTheme="dark"
         disableTransitionOnChange
       >
+        <FloatingNav
+          navItems={[
+            { name: "Home", link: "/" },
+            { name: "About", link: "/about" },
+            { name: "Projects", link: "/projects" },
+            { name: "Contact", link: "/contact" },
+          ]}
+        />
         {children}
       </ThemeProvider>
     </body>
