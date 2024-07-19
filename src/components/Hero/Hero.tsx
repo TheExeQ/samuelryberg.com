@@ -28,7 +28,7 @@ const Hero: FC = () => {
           priority
         />
       </div>
-      <div className="absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-grid-black/[0.2] dark:bg-grid-white/[0.2]" />
+      <div className="absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-grid-black/[0.1] dark:bg-grid-white/[0.1]" />
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />
 
       {/* Description */}
