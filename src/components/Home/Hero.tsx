@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Spotlight, TextGenerateEffect, MagicButton } from "@/components";
 import { Navigation } from "lucide-react";
@@ -32,7 +33,7 @@ const Hero: FC = () => {
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />
 
       {/* Description */}
-      <div className="relative z-10 my-56 flex justify-center">
+      <div className="relative z-10 my-36 flex justify-center md:my-56">
         <div className="lg:max-w[60vw] flex max-w-[89vw] flex-col items-center justify-center md:max-w-2xl">
           <h2 className="max-w-80 text-center text-xs uppercase tracking-widest text-blue-100">
             Featured Project
@@ -43,10 +44,12 @@ const Hero: FC = () => {
             words="Vipertrace"
           />
 
-          <MagicButton
-            title="Read more!"
-            icon={<Navigation className="w-4" />}
-          />
+          <Link href="projects/vipertrace">
+            <MagicButton
+              title="Read more!"
+              icon={<Navigation className="w-4" />}
+            />
+          </Link>
         </div>
       </div>
     </div>

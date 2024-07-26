@@ -1,4 +1,4 @@
-import Hero from "./Hero/Hero";
+import Hero from "./Home/Hero";
 import { MagicButton } from "./MagicButton";
 
 import { FloatingNav } from "./ui/FloatingNav";

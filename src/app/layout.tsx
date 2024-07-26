@@ -36,12 +36,13 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
         <FloatingNav
           navItems={[
             { name: "Home", link: "/" },
-            { name: "About", link: "/about" },
             { name: "Projects", link: "/projects" },
+            { name: "Blog", link: "/blog" },
             { name: "Contact", link: "/contact" },
           ]}
         />
         {children}
+        {/* Footer */}
       </ThemeProvider>
     </body>
   </html>
