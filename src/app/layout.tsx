@@ -34,7 +34,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
         disableTransitionOnChange
       >
         <FloatingNav navItems={nav} />
-        <div className="relative min-h-screen overflow-hidden">
+        <div className="relative z-10 min-h-screen overflow-hidden">
           <div className="mx-auto max-w-7xl">{children}</div>
         </div>
         <Footer />
