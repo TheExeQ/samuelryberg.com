@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import { MagicButton } from "@/components";
 import { footer } from "@/constants/config";
@@ -43,12 +44,9 @@ export const Footer: FC = () => {
 
           <div className="flex items-center gap-6 md:gap-3">
             {footer.socials.map((info, index) => (
-              <Link href={info.link} target="_blank">
-                <div
-                  key={index}
-                  className="saturate-180 bg-black-200 border-black-300 flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg border bg-opacity-75 backdrop-blur-lg backdrop-filter"
-                >
-                  <img
+              <Link key={index} href={info.link} target="_blank">
+                <div className="saturate-180 bg-black-200 border-black-300 flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg border bg-opacity-75 backdrop-blur-lg backdrop-filter">
+                  <Image
                     src={info.icon}
                     alt={info.title}
                     width={20}
