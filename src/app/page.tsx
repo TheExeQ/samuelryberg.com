@@ -1,9 +1,10 @@
 import { FC } from "react";
-import { Hero } from "@/components";
+import { Hero, About } from "@/components";
 
 const Home: FC = () => (
   <main className="h-full">
     <Hero />
+    <About />
     {/* About */}
     {/* Experience */}
     {/* Projects */}

@@ -7,7 +7,7 @@ import { Navigation, ArrowDownFromLine } from "lucide-react";
 
 import FeaturedBackground from "@public/projects/vipertrace/vipertrace.png";
 
-const Hero: FC = () => {
+export const Hero: FC = () => {
   return (
     <div className="h-screen">
       {/* Spotlights */}
@@ -62,5 +62,3 @@ const Hero: FC = () => {
     </div>
   );
 };
-
-export default Hero;
