@@ -1,5 +1,5 @@
 import { Hero } from "./Home/Hero";
-import { About } from "./About";
+import { About } from "./Home/About";
 import { Footer } from "./Footer";
 import { MagicButton } from "./MagicButton";
 

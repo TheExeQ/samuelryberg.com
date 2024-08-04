@@ -45,7 +45,7 @@ export const Footer: FC = () => {
           <div className="flex items-center gap-6 md:gap-3">
             {footer.socials.map((info, index) => (
               <Link key={index} href={info.link} target="_blank">
-                <div className="saturate-180 bg-black-200 border-black-300 flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg border bg-opacity-75 backdrop-blur-lg backdrop-filter">
+                <div className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg border-2 bg-opacity-75 backdrop-blur-lg backdrop-filter">
                   <Image
                     src={info.icon}
                     alt={info.title}
