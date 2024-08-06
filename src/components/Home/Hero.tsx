@@ -43,7 +43,7 @@ export const Hero: FC = () => {
           </h2>
 
           <TextGenerateEffect
-            className="text-center text-6xl uppercase lg:text-8xl"
+            className="text-center text-5xl uppercase lg:text-8xl"
             words="Vipertrace"
           />
 
