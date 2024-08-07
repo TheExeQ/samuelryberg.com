@@ -35,7 +35,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
       >
         <FloatingNav navItems={nav} />
         <div className="relative z-10 min-h-screen overflow-hidden">
-          <div className="mx-auto max-w-7xl">{children}</div>
+          {children}
         </div>
         <Footer />
       </ThemeProvider>

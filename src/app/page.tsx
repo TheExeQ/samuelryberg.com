@@ -4,12 +4,13 @@ import { Hero, About } from "@/components";
 const Home: FC = () => (
   <main className="h-full">
     <Hero />
-    <About />
-    {/* About */}
-    {/* Experience */}
-    {/* Projects */}
-    {/* Contact */}
-    <div className="h-screen"></div>
+    <div className="mx-auto h-full w-full max-w-7xl">
+      <About />
+      {/* About */}
+      {/* Experience */}
+      {/* Projects */}
+      {/* Contact */}
+    </div>
   </main>
 );
 

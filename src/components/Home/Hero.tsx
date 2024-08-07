@@ -9,7 +9,7 @@ import FeaturedBackground from "@public/projects/vipertrace/vipertrace.png";
 
 export const Hero: FC = () => {
   return (
-    <div className="h-screen">
+    <div className="relative h-screen">
       {/* Spotlights */}
       <div className="hidden lg:block">
         <Spotlight
