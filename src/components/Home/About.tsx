@@ -33,14 +33,14 @@ export const About: FC = () => {
 
       <div className="prose prose-invert mx-auto max-w-[800px] px-8 md:px-6">
         <p>
-          I'm a Gameplay, Tools and Backend Engineer from Sweden who enjoys
+          I&apos;m a Gameplay, Tools and Backend Engineer from Sweden who enjoys
           creating games. In my free time, I like to cook and make/learn music.
           <br />
           <br />
-          I'm always looking to learn new things and expand my knowledge in game
-          development. I'm fascinated by the constantly evolving technology in
-          this field and I'm always eager to stay on top of the latest trends
-          and techniques.
+          I&apos;m always looking to learn new things and expand my knowledge in
+          game development. I&apos;m fascinated by the constantly evolving
+          technology in this field and I&apos;m always eager to stay on top of
+          the latest trends and techniques.
         </p>
       </div>
     </div>
