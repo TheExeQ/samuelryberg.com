@@ -21,6 +21,7 @@ export const About: FC = () => {
             className="rounded-xl"
             src={AboutImage}
             alt="About me picture"
+            sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
             fill
           />
           <div className="absolute flex h-full w-full items-end justify-center">
