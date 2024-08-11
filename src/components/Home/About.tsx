@@ -10,6 +10,7 @@ const AlexBrush = Alex_Brush({ subsets: ["latin"], weight: "400" });
 export const About: FC = () => {
   return (
     <div className="mt-32">
+      {/* Picture and Name */}
       <div
         className={cn(
           AlexBrush.className,
@@ -32,6 +33,7 @@ export const About: FC = () => {
         </div>
       </div>
 
+      {/* Description */}
       <div className="prose prose-invert mx-auto max-w-[800px] px-8 md:px-6">
         <p>
           I&apos;m a Gameplay, Tools and Backend Engineer from Sweden who enjoys
@@ -44,6 +46,49 @@ export const About: FC = () => {
           the latest trends and techniques.
         </p>
       </div>
+
+      {/* Experience Timeline */}
+      <ul role="list" className="mx-auto mt-8 max-w-screen-md">
+        <li className="group relative flex flex-col pb-8 pl-7 last:pb-0">
+          <div className="absolute bottom-0 left-[calc(0.25rem-0.5px)] top-0 w-px bg-white/10 group-first:top-3"></div>
+          <div className="absolute left-0 top-2 h-2 w-2 rounded-full border border-sky-300 bg-zinc-950"></div>
+          <h3 className="mt-2 text-sm/6 font-semibold text-white">
+            Flashbulb Games
+          </h3>
+          <p className="font-display text-2xs/6 order-first font-semibold tracking-[0.2em] text-sky-300">
+            2023 - Present
+          </p>
+          <p className="mt-0.5 text-sm/6 text-zinc-400">
+            Gameplay, UI & Tools Engineer
+          </p>
+        </li>
+        <li className="group relative flex flex-col pb-8 pl-7 last:pb-0">
+          <div className="absolute bottom-0 left-[calc(0.25rem-0.5px)] top-0 w-px bg-white/10 group-first:top-3"></div>
+          <div className="absolute left-0 top-2 h-2 w-2 rounded-full border border-sky-300 bg-zinc-950"></div>
+          <h3 className="mt-2 text-sm/6 font-semibold text-white">
+            The Game Assembly
+          </h3>
+          <p className="font-display text-2xs/6 order-first font-semibold tracking-[0.2em] text-sky-300">
+            2021 - 2024
+          </p>
+          <p className="mt-0.5 text-sm/6 text-zinc-400">
+            Learning industry standards in the game development industry
+          </p>
+        </li>
+        <li className="group relative flex flex-col pb-8 pl-7 last:pb-0">
+          <div className="absolute bottom-0 left-[calc(0.25rem-0.5px)] top-0 w-px bg-white/10 group-first:top-3"></div>
+          <div className="absolute left-0 top-2 h-2 w-2 rounded-full border border-sky-300 bg-zinc-950"></div>
+          <h3 className="mt-2 text-sm/6 font-semibold text-white">
+            LBS Creative High School
+          </h3>
+          <p className="font-display text-2xs/6 order-first font-semibold tracking-[0.2em] text-sky-300">
+            2017 - 2020
+          </p>
+          <p className="mt-0.5 text-sm/6 text-zinc-400">
+            Learning game development in the Unity game engine
+          </p>
+        </li>
+      </ul>
     </div>
   );
 };
