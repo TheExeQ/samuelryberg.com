@@ -48,7 +48,7 @@ export const About: FC = () => {
       </div>
 
       {/* Experience Timeline */}
-      <ul role="list" className="mx-auto mt-8 max-w-screen-md">
+      <ul role="list" className="mx-auto mt-8 max-w-screen-md px-4">
         <li className="group relative flex flex-col pb-8 pl-7 last:pb-0">
           <div className="absolute bottom-0 left-[calc(0.25rem-0.5px)] top-0 w-px bg-white/10 group-first:top-3"></div>
           <div className="absolute left-0 top-2 h-2 w-2 rounded-full border border-sky-300 bg-zinc-950"></div>
