@@ -1,19 +1,31 @@
 import { FC } from "react";
 
+import Link from "next/link";
+
+import { MagicButton } from "@/components";
+import { DoorClosed } from "lucide-react";
+
 const NotFound: FC = () => (
-  <div className="flex min-h-screen flex-1 flex-col items-center justify-center px-8">
-    <div className="max-w-4xl rounded-md border border-neutral-200 px-9 py-6 shadow-2xl duration-200 motion-reduce:transition-none dark:border-neutral-800 dark:bg-[#161617]">
-      <h1 className="bg-gradient-to-r from-purple-500 to-pink-200 bg-clip-text text-transparent text-3xl text-center font-semibold">
-        404 - Page not found
-      </h1>
-      <p className="mt-3 text-center text-neutral-800 dark:text-neutral-200">
-        We&apos;re sorry — we can&apos;t find the page you&apos;re looking for.
-      </p>
-      <a href="/" className="underline mx-auto">
-        Go home
-      </a>
+  <main className="flex h-svh justify-center">
+    <div className="flex flex-col items-center justify-center">
+      <h2 className="max-w-80 text-center text-xs uppercase tracking-widest text-red-300">
+        Error
+      </h2>
+
+      <div className="my-8">
+        <h1 className="text-center text-6xl font-bold uppercase leading-snug tracking-wide lg:text-8xl">
+          <span className="text-purple-300">Page</span> not found!
+        </h1>
+      </div>
+
+      <Link href="/">
+        <MagicButton
+          title="Back to home"
+          icon={<DoorClosed className="w-4" />}
+        />
+      </Link>
     </div>
-  </div>
+  </main>
 );
 
 export default NotFound;

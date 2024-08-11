@@ -101,82 +101,43 @@ export const technologies: Array<Technology> = [
 
 export const nav: Array<NavLink> = [
   {
-    title: "Home",
-    href: "/",
+    name: "Home",
+    link: "/",
   },
   {
-    title: "My work",
-    href: "/work",
+    name: "My work",
+    link: "/work",
   },
   // {
   //   title: "Music",
   //   href: "/music",
   // },
   {
-    title: "Blog",
-    href: "/blog",
+    name: "Blog",
+    link: "/blog",
   },
   {
-    title: "Contact",
-    href: "/contact",
+    name: "Contact",
+    link: "/contact",
   },
 ];
 
 export const footer: Footer = {
-  categories: [
+  socials: [
     {
-      title: "Important Links",
-      links: [
-        {
-          title: "Home",
-          href: "/",
-        },
-        {
-          title: "My work",
-          href: "/work",
-        },
-        // {
-        //   title: "Music",
-        //   href: "/music",
-        // },
-        {
-          title: "Blog",
-          href: "/blog",
-        },
-      ],
+      title: "Github",
+      link: meta.accounts.github.repo,
+      icon: "./Icons/github.svg",
     },
     {
-      title: "Social",
-      links: [
-        {
-          title: "Github",
-          href: meta.accounts.github.repo,
-          target: "_blank",
-        },
-        {
-          title: "LinkedIn",
-          href: `https://www.linkedin.com/in/${meta.accounts.linkedin.username}`,
-          target: "_blank",
-        },
-        {
-          title: "Instagram",
-          href: `https://instagram.com/${meta.accounts.instagram.username}`,
-          target: "_blank",
-        },
-      ],
+      title: "LinkedIn",
+      link: `https://www.linkedin.com/in/${meta.accounts.linkedin.username}`,
+      icon: "./Icons/linkedin.svg",
     },
     {
-      title: "Other",
-      links: [
-        {
-          title: "About Me",
-          href: "/about",
-        },
-        {
-          title: "Contact",
-          href: "/contact",
-        },
-      ],
+      title: "Instagram",
+      link: `https://instagram.com/${meta.accounts.instagram.username}`,
+      icon: "./Icons/instagram.svg",
     },
   ],
 };

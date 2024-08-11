@@ -1,20 +1,17 @@
 import { FC } from "react";
-import { Hero, About, Technologies } from "@/components";
-
-import Vipertrace from "@public/projects/vipertrace/vipertrace.png";
-
-const featuredProject = {
-  projectName: "Vipertrace",
-  poster: Vipertrace,
-  url: "https://www.samuelryberg.com/projects/vipertrace",
-};
+import { Hero, About } from "@/components";
 
 const Home: FC = () => (
-  <>
-    <Hero {...featuredProject} />
-    <About />
-    <Technologies />
-  </>
+  <main className="h-full">
+    <Hero />
+    <div className="mx-auto h-full w-full max-w-7xl">
+      <About />
+      {/* About */}
+      {/* Experience */}
+      {/* Projects */}
+      {/* Contact */}
+    </div>
+  </main>
 );
 
 export default Home;

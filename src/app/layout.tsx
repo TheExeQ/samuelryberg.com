@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
 import { FC, PropsWithChildren } from "react";
-import "@/styles/globals.css";
+
+import { FloatingNav, Footer } from "@/components";
 
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { meta, nav } from "@/constants/config";
 
-import { meta } from "@/constants/config";
-import { NavBar, Footer } from "@/layouts";
-
-const inter = Inter({ subsets: ["latin"] });
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: meta.title,
@@ -27,19 +26,19 @@ export const metadata: Metadata = {
 };
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => (
-  <html lang="en">
-    <body className={inter.className}>
-      <NavBar />
-      <main className="min-h-screen">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          disableTransitionOnChange
-        >
+  <html lang="en" suppressHydrationWarning>
+    <body className={GeistSans.className}>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="dark"
+        disableTransitionOnChange
+      >
+        <FloatingNav navItems={nav} />
+        <div className="relative z-10 min-h-screen overflow-hidden">
           {children}
-        </ThemeProvider>
-      </main>
-      <Footer />
+        </div>
+        <Footer />
+      </ThemeProvider>
     </body>
   </html>
 );

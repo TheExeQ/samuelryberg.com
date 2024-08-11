@@ -1,14 +1,15 @@
 export interface NavLink {
-  title: string;
-  href: string;
-  target?: string;
+  name: string;
+  link: string;
+  icon?: JSX.Element;
 }
 
-export interface FooterCategory {
+export interface FooterSocial {
   title: string;
-  links: Array<NavLink>;
+  link: string;
+  icon: string;
 }
 
 export interface Footer {
-  categories: Array<FooterCategory>;
+  socials: Array<FooterSocial>;
 }
