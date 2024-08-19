@@ -1,5 +1,6 @@
 import { Hero } from "./Home/Hero";
 import { About } from "./Home/About";
+import { Awards } from "./Home/Awards";
 import { Footer } from "./Containers/Footer";
 import { MagicButton } from "./Common/MagicButton";
 
@@ -10,6 +11,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 export {
   Hero,
   About,
+  Awards,
   Footer,
   MagicButton,
   FloatingNav,
