@@ -6,7 +6,7 @@ import { footer } from "@/constants/config";
 
 export const Footer: FC = () => {
   return (
-    <footer className="relative bottom-0 w-full pb-10 pt-20" id="contact">
+    <footer className="relative bottom-0 w-full px-4 pb-10 pt-20" id="contact">
       <div className="mx-auto max-w-7xl">
         {/* background grid */}
         <div className="absolute bottom-0 left-0 min-h-96 w-full">
