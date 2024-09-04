@@ -1,16 +1,9 @@
 import { FC } from "react";
-import { Hero, About, Awards } from "@/components";
 
 const Home: FC = () => (
-  <main className="h-full">
-    <Hero />
-    <div className="mx-auto h-full w-full max-w-7xl">
-      <About />
-      <Awards />
-      {/* About */}
-      {/* Experience */}
-      {/* Projects */}
-      {/* Contact */}
+  <main className="h-screen">
+    <div className="flex h-full items-center justify-center">
+      <p>Home</p>
     </div>
   </main>
 );
