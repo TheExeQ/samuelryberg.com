@@ -31,9 +31,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
         defaultTheme="dark"
         disableTransitionOnChange
       >
-        <div className="relative z-10 min-h-screen overflow-hidden">
-          {children}
-        </div>
+        <div className="relative min-h-screen overflow-hidden">{children}</div>
       </ThemeProvider>
     </body>
   </html>
