@@ -1,10 +1,10 @@
 import { FC } from "react";
 
-const Home: FC = () => (
+const Blog: FC = () => (
   <>
     <div className="h-screen" />
     <div className="h-screen" />
   </>
 );
 
-export default Home;
+export default Blog;

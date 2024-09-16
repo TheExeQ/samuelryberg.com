@@ -1,10 +1,11 @@
-import { ModeToggle } from "@/components";
 import { FC } from "react";
 
-const Home: FC = () => (
+import { ModeToggle } from "@/components";
+
+const DarkMode: FC = () => (
   <div className="flex h-screen items-center justify-center">
     <ModeToggle />
   </div>
 );
 
-export default Home;
+export default DarkMode;
