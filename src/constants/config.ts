@@ -120,6 +120,10 @@ export const nav: Array<NavLink> = [
     name: "Contact",
     link: "/contact",
   },
+  {
+    name: "Mode",
+    link: "/dark",
+  },
 ];
 
 export const footer: Footer = {
