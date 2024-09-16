@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 import {
   Select,
   SelectContent,
@@ -37,20 +38,11 @@ export function ContactForm() {
             </div>
             <div className="flex flex-col space-y-1.5">
               <Label htmlFor="mail">Email*</Label>
-              <Input id="name" placeholder="example@mail.com" />
+              <Input id="mail" placeholder="example@mail.com" />
             </div>
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="Role">Role</Label>
-              <Select>
-                <SelectTrigger id="Role">
-                  <SelectValue placeholder="Select" />
-                </SelectTrigger>
-                <SelectContent position="popper">
-                  <SelectItem value="recruiter">Recruiter</SelectItem>
-                  <SelectItem value="student">Student</SelectItem>
-                  <SelectItem value="other">Other</SelectItem>
-                </SelectContent>
-              </Select>
+              <Label htmlFor="message">Message*</Label>
+              <Textarea id="message" placeholder="Hello!" />
             </div>
           </div>
         </form>
