@@ -32,9 +32,11 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
         enableSystem
         disableTransitionOnChange
       >
-        <FloatingNav navItems={nav} />
-        <div className="min-h-screen overflow-hidden">{children}</div>
-        <Footer />
+        <div className="overflow-hidden">
+          <FloatingNav navItems={nav} />
+          <div className="min-h-screen">{children}</div>
+          <Footer />
+        </div>
       </ThemeProvider>
     </body>
   </html>
