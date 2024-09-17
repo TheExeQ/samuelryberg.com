@@ -105,7 +105,7 @@ export const nav: Array<NavLink> = [
     link: "/",
   },
   {
-    name: "My work",
+    name: "Work",
     link: "/work",
   },
   // {
@@ -131,17 +131,14 @@ export const footer: Footer = {
     {
       title: "Github",
       link: meta.accounts.github.repo,
-      icon: "./Icons/github.svg",
     },
     {
       title: "LinkedIn",
       link: `https://www.linkedin.com/in/${meta.accounts.linkedin.username}`,
-      icon: "./Icons/linkedin.svg",
     },
     {
       title: "Instagram",
       link: `https://instagram.com/${meta.accounts.instagram.username}`,
-      icon: "./Icons/instagram.svg",
     },
   ],
 };

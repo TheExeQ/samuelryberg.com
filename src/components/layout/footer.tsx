@@ -1,26 +1,50 @@
 import React, { FC } from "react";
+import Link from "next/link";
+
+import { footer, nav } from "@/constants/config";
 
 const Footer: FC = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <div className="bg-background border-t border-neutral-100 px-8 py-20 dark:border-white/[0.1]">
-      <div className="text-foreground mx-auto flex max-w-[80rem] items-center justify-between px-6">
-        <p>Demo Footer</p>
-        <div className="grid grid-cols-3 items-start gap-10">
-          <div className="mt-4 flex flex-col justify-center space-y-4">
-            <p>Home</p>
-            <p>Work</p>
-            <p>Blog</p>
-            <p>Contact</p>
+    <div className="border-t border-neutral-100 bg-background px-8 py-20 dark:border-white/[0.1]">
+      <div className="mx-auto flex max-w-[80rem] flex-col items-start justify-between px-6 text-neutral-500 sm:flex-row">
+        <div>
+          <div className="mb-4 mr-4 md:flex">
+            <div className="flex items-center justify-start space-x-2 text-2xl font-bold text-black dark:text-white">
+              <h1>Samuel Ryberg</h1>
+            </div>
           </div>
-          <div className="mt-4 flex flex-col justify-center space-y-4">
-            <p>LinkedIn</p>
-            <p>Instagram</p>
-            <p>Discord</p>
+          <div>Software Engineer</div>
+          <div className="mt-2">
+            &copy; 2023 - {currentYear} Samuel Ryberg, All rights reserved.
           </div>
+        </div>
+        <div className="mt-10 grid grid-cols-2 items-start gap-10 text-foreground/60 sm:mt-0">
+          {/* Website Navigation */}
           <div className="mt-4 flex flex-col justify-center space-y-4">
-            <p>Youtube</p>
-            <p>Twitch</p>
-            <p>Music</p>
+            {nav.slice(0, 5).map((navItem, index) => (
+              <Link
+                key={index}
+                href={navItem.link}
+                className="hover:text-foreground/80"
+              >
+                {navItem.name}
+              </Link>
+            ))}
+          </div>
+          {/* Social Links */}
+          <div className="mt-4 flex flex-col justify-center space-y-4">
+            {footer.socials.map((social, index) => (
+              <Link
+                key={index}
+                href={social.link}
+                target="_blank"
+                className="hover:text-foreground/80"
+              >
+                {social.title}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

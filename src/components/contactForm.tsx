@@ -12,21 +12,17 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 
 export function ContactForm() {
   return (
-    <Card className="w-[350px]">
+    <Card className="w-[500px]">
       <CardHeader>
-        <CardTitle>Contact Me!</CardTitle>
+        <CardTitle className="mx-auto mb-2 text-2xl font-bold">
+          Contact Me!
+        </CardTitle>
         <CardDescription>
-          Send a message and I will reach out to you.
+          I am always open to new opportunities and projects. Feel free to
+          contact me!
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -42,13 +38,17 @@ export function ContactForm() {
               <Label htmlFor="mail">
                 Email<span className="text-red-500">*</span>
               </Label>
-              <Input id="mail" placeholder="example@mail.com" />
+              <Input id="mail" placeholder="john@doe.com" />
             </div>
             <div className="flex flex-col space-y-1.5">
               <Label htmlFor="message">
                 Message<span className="text-red-500">*</span>
               </Label>
-              <Textarea id="message" placeholder="Hello!" />
+              <Textarea
+                id="message"
+                placeholder="Hello there!"
+                className="h-32"
+              />
             </div>
           </div>
         </form>
