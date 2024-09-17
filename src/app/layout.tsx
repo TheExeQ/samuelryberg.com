@@ -28,7 +28,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
     <body className={GeistSans.className}>
       <ThemeProvider
         attribute="class"
-        defaultTheme="system"
+        defaultTheme="dark"
         enableSystem
         disableTransitionOnChange
       >

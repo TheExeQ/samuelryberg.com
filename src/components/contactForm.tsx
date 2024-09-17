@@ -33,15 +33,21 @@ export function ContactForm() {
         <form>
           <div className="grid w-full items-center gap-4">
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="name">Name*</Label>
+              <Label htmlFor="name">
+                Name<span className="text-red-500">*</span>
+              </Label>
               <Input id="name" placeholder="John Doe" />
             </div>
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="mail">Email*</Label>
+              <Label htmlFor="mail">
+                Email<span className="text-red-500">*</span>
+              </Label>
               <Input id="mail" placeholder="example@mail.com" />
             </div>
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="message">Message*</Label>
+              <Label htmlFor="message">
+                Message<span className="text-red-500">*</span>
+              </Label>
               <Textarea id="message" placeholder="Hello!" />
             </div>
           </div>
