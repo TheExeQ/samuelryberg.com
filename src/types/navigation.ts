@@ -7,7 +7,6 @@ export interface NavLink {
 export interface FooterSocial {
   title: string;
   link: string;
-  icon: string;
 }
 
 export interface Footer {

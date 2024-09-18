@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { FC, PropsWithChildren } from "react";
 
-import { FloatingNav, Footer } from "@/components";
-
-import { ThemeProvider } from "@/components/ThemeProvider";
+import { FloatingNav, Footer, ThemeProvider } from "@/components";
 import { meta, nav } from "@/constants/config";
 
 import "@/styles/globals.css";
@@ -31,13 +29,14 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
       <ThemeProvider
         attribute="class"
         defaultTheme="dark"
+        enableSystem
         disableTransitionOnChange
       >
-        <FloatingNav navItems={nav} />
-        <div className="relative z-10 min-h-screen overflow-hidden">
-          {children}
+        <div className="overflow-hidden">
+          <FloatingNav navItems={nav} />
+          <div className="min-h-screen">{children}</div>
+          <Footer />
         </div>
-        <Footer />
       </ThemeProvider>
     </body>
   </html>
