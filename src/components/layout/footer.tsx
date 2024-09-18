@@ -17,7 +17,7 @@ const Footer: FC = () => {
           </div>
           <div>Software Engineer</div>
           <div className="mt-2">
-            &copy; 2023 - {currentYear} Samuel Ryberg, All rights reserved.
+            &copy; {currentYear} Samuel Ryberg, All rights reserved.
           </div>
         </div>
         <div className="mt-10 grid grid-cols-2 items-start gap-10 text-foreground/60 sm:mt-0">
