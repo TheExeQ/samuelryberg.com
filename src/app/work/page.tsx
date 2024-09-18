@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Activity, Apple, Anchor } from "lucide-react";
+import { SiUnity, SiUnrealengine, SiCplusplus } from "react-icons/si";
 
 import VipertraceImage from "@public/Projects/Vipertrace/Vipertrace.png";
 
@@ -12,7 +12,7 @@ const projects = [
     id: 1,
     title: "Vipertrace",
     image: VipertraceImage,
-    technologies: ["react", "unity", "unreal"],
+    technologies: ["cpp", "unity", "unreal"],
   },
   {
     id: 2,
@@ -24,14 +24,14 @@ const projects = [
     id: 3,
     title: "Vipertrace",
     image: VipertraceImage,
-    technologies: ["react"],
+    technologies: ["cpp"],
   },
 ];
 
 const technologyIcons: { [key: string]: JSX.Element } = {
-  react: <Activity className="h-4 w-4" />,
-  unity: <Apple className="h-4 w-4" />,
-  unreal: <Anchor className="h-4 w-4" />,
+  cpp: <SiCplusplus className="h-4 w-4" />,
+  unity: <SiUnity className="h-4 w-4" />,
+  unreal: <SiUnrealengine className="h-4 w-4" />,
 };
 
 const Work: FC = () => {
