@@ -6,6 +6,8 @@ import { Spotlight } from "@/components";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
+import AboutImage from "@public/About/About-Gray.jpg";
+
 const Home: FC = () => (
   <main className="relative min-h-screen">
     <Spotlight
@@ -41,7 +43,7 @@ const Home: FC = () => (
         <div className="flex flex-1 items-center justify-center">
           <div className="relative h-64 w-64 overflow-hidden rounded-lg border-2 border-primary sm:h-80 sm:w-80">
             <Image
-              src="/About/About-Gray.jpg"
+              src={AboutImage}
               alt="Samuel Ryberg"
               layout="fill"
               objectFit="cover"

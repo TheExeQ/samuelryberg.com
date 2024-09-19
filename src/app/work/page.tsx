@@ -1,34 +1,37 @@
 import React, { FC } from "react";
+import Image from "next/image";
 
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Activity, Apple, Anchor } from "lucide-react";
+import { SiUnity, SiUnrealengine, SiCplusplus } from "react-icons/si";
+
+import VipertraceImage from "@public/Projects/Vipertrace/Vipertrace.png";
 
 const projects = [
   {
     id: 1,
     title: "Vipertrace",
-    image: "/Projects/Vipertrace/Vipertrace.png",
-    technologies: ["react", "unity", "unreal"],
+    image: VipertraceImage,
+    technologies: ["cpp", "unity", "unreal"],
   },
   {
     id: 2,
     title: "Vipertrace",
-    image: "/Projects/Vipertrace/Vipertrace.png",
+    image: VipertraceImage,
     technologies: ["unity", "unreal"],
   },
   {
     id: 3,
     title: "Vipertrace",
-    image: "/Projects/Vipertrace/Vipertrace.png",
-    technologies: ["react"],
+    image: VipertraceImage,
+    technologies: ["cpp"],
   },
 ];
 
 const technologyIcons: { [key: string]: JSX.Element } = {
-  react: <Activity className="h-4 w-4" />,
-  unity: <Apple className="h-4 w-4" />,
-  unreal: <Anchor className="h-4 w-4" />,
+  cpp: <SiCplusplus className="h-4 w-4" />,
+  unity: <SiUnity className="h-4 w-4" />,
+  unreal: <SiUnrealengine className="h-4 w-4" />,
 };
 
 const Work: FC = () => {
@@ -39,7 +42,7 @@ const Work: FC = () => {
         {projects.map((project) => (
           <Card key={project.id} className="overflow-hidden">
             <div className="relative pb-[56.25%]">
-              <img
+              <Image
                 src={project.image}
                 alt={`${project.title} wallpaper`}
                 className="absolute inset-0 h-full w-full object-cover"
