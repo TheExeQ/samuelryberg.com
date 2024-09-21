@@ -1,32 +1,27 @@
 import React, { FC } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { SiUnity, SiUnrealengine, SiCplusplus } from "react-icons/si";
 
-import VipertraceImage from "@public/Projects/Vipertrace/Vipertrace.png";
+import RubberBanditsImage from "@public/projects/rubberbandits/rubberbandits.jpg";
 
-const projects = [
-  {
-    id: 1,
-    title: "Vipertrace",
-    image: VipertraceImage,
-    technologies: ["cpp", "unity", "unreal"],
-  },
-  {
-    id: 2,
-    title: "Vipertrace",
-    image: VipertraceImage,
-    technologies: ["unity", "unreal"],
-  },
-  {
-    id: 3,
-    title: "Vipertrace",
-    image: VipertraceImage,
-    technologies: ["cpp"],
-  },
-];
+import PotionRunImage from "@public/projects/potionrun/potionrun.png";
+import HungryHouseImage from "@public/projects/hungryhouse/hungryhouse.png";
+import CuteEmUpImage from "@public/projects/cuteemup/cuteemup.png";
+import BardKnightImage from "@public/projects/bardknight/bardknight.png";
+import BoImage from "@public/projects/morningofbo/bo.png";
+import SpiteImage from "@public/projects/spiteyellowplague/spite.png";
+import EkayaImage from "@public/projects/ekayaandpebbles/ekaya.png";
+import VipertraceImage from "@public/projects/vipertrace/vipertrace.png";
+
+type Project = {
+  id: number;
+  title: string;
+  image: StaticImageData;
+  technologies: string[];
+};
 
 const technologyIcons: { [key: string]: JSX.Element } = {
   cpp: <SiCplusplus className="h-4 w-4" />,
@@ -34,10 +29,84 @@ const technologyIcons: { [key: string]: JSX.Element } = {
   unreal: <SiUnrealengine className="h-4 w-4" />,
 };
 
+const professionalProjects: Project[] = [
+  {
+    id: 1,
+    title: "Rubber Bandits",
+    image: RubberBanditsImage,
+    technologies: ["unity"],
+  },
+];
+
+const academicProjects: Project[] = [
+  {
+    id: 1,
+    title: "Vipertrace",
+    image: VipertraceImage,
+    technologies: ["cpp"],
+  },
+  {
+    id: 2,
+    title: "Ekaya & Pebbles",
+    image: EkayaImage,
+    technologies: ["cpp"],
+  },
+  {
+    id: 3,
+    title: "Spite: The Yellow Plague",
+    image: SpiteImage,
+    technologies: ["cpp"],
+  },
+  {
+    id: 4,
+    title: "Bo's Morning",
+    image: BoImage,
+    technologies: ["cpp"],
+  },
+  {
+    id: 5,
+    title: "Bard Knight",
+    image: BardKnightImage,
+    technologies: ["cpp"],
+  },
+  {
+    id: 6,
+    title: "Cute 'em up",
+    image: CuteEmUpImage,
+    technologies: ["cpp"],
+  },
+  {
+    id: 7,
+    title: "Hungry House",
+    image: HungryHouseImage,
+    technologies: ["unity"],
+  },
+  {
+    id: 8,
+    title: "Potion Run",
+    image: PotionRunImage,
+    technologies: ["unity"],
+  },
+];
+
 const Work: FC = () => {
   return (
     <div className="container mx-auto px-4 py-8 pt-32">
-      <h1 className="mb-8 text-3xl font-bold">My Game Development Projects</h1>
+      <Projects title="Professional" projects={professionalProjects} />
+      <Projects title="Academic" projects={academicProjects} />
+    </div>
+  );
+};
+
+interface ProjectsProps {
+  title: string;
+  projects: Project[];
+}
+
+const Projects: FC<ProjectsProps> = ({ title, projects }) => {
+  return (
+    <div className="pt-12">
+      <h1 className="mb-8 text-4xl font-bold">{title}</h1>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <Card key={project.id} className="overflow-hidden">
@@ -45,7 +114,8 @@ const Work: FC = () => {
               <Image
                 src={project.image}
                 alt={`${project.title} wallpaper`}
-                className="absolute inset-0 h-full w-full object-cover"
+                fill
+                style={{ objectFit: "cover" }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-4">
