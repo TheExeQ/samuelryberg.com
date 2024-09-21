@@ -41,59 +41,59 @@ const professionalProjects: Project[] = [
 const academicProjects: Project[] = [
   {
     id: 1,
-    title: "Potion Run",
-    image: PotionRunImage,
-    technologies: ["unity"],
+    title: "Vipertrace",
+    image: VipertraceImage,
+    technologies: ["cpp"],
   },
   {
     id: 2,
-    title: "Hungry House",
-    image: HungryHouseImage,
-    technologies: ["unity"],
-  },
-  {
-    id: 3,
-    title: "Cute 'em up",
-    image: CuteEmUpImage,
-    technologies: ["cpp"],
-  },
-  {
-    id: 4,
-    title: "Bard Knight",
-    image: BardKnightImage,
-    technologies: ["cpp"],
-  },
-  {
-    id: 5,
-    title: "Bo's Morning",
-    image: BoImage,
-    technologies: ["cpp"],
-  },
-  {
-    id: 6,
-    title: "Spite: The Yellow Plague",
-    image: SpiteImage,
-    technologies: ["cpp"],
-  },
-  {
-    id: 7,
     title: "Ekaya & Pebbles",
     image: EkayaImage,
     technologies: ["cpp"],
   },
   {
-    id: 8,
-    title: "Vipertrace",
-    image: VipertraceImage,
+    id: 3,
+    title: "Spite: The Yellow Plague",
+    image: SpiteImage,
     technologies: ["cpp"],
+  },
+  {
+    id: 4,
+    title: "Bo's Morning",
+    image: BoImage,
+    technologies: ["cpp"],
+  },
+  {
+    id: 5,
+    title: "Bard Knight",
+    image: BardKnightImage,
+    technologies: ["cpp"],
+  },
+  {
+    id: 6,
+    title: "Cute 'em up",
+    image: CuteEmUpImage,
+    technologies: ["cpp"],
+  },
+  {
+    id: 7,
+    title: "Hungry House",
+    image: HungryHouseImage,
+    technologies: ["unity"],
+  },
+  {
+    id: 8,
+    title: "Potion Run",
+    image: PotionRunImage,
+    technologies: ["unity"],
   },
 ];
 
 const Work: FC = () => {
   return (
     <div className="container mx-auto px-4 py-8 pt-32">
-      <Projects title="Professional Projects" projects={professionalProjects} />
-      <Projects title="Academic Projects" projects={academicProjects} />
+      <Projects title="Professional" projects={professionalProjects} />
+      <Projects title="Academic" projects={academicProjects} />
     </div>
   );
 };
