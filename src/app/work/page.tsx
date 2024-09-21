@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { SiUnity, SiUnrealengine, SiCplusplus } from "react-icons/si";
 
-import VipertraceImage from "@public/Projects/Vipertrace/Vipertrace.png";
+import VipertraceImage from "@public/projects/vipertrace/vipertrace.png";
 
 const projects = [
   {

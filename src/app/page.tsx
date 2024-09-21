@@ -6,7 +6,7 @@ import { Spotlight } from "@/components";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-import AboutImage from "@public/About/About-Gray.jpg";
+import AboutImage from "@public/about/about-gray.jpg";
 
 const Home: FC = () => (
   <main className="relative min-h-screen">
