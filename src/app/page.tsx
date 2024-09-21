@@ -45,8 +45,8 @@ const Home: FC = () => (
             <Image
               src={AboutImage}
               alt="Samuel Ryberg"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>

@@ -45,7 +45,8 @@ const Work: FC = () => {
               <Image
                 src={project.image}
                 alt={`${project.title} wallpaper`}
-                className="absolute inset-0 h-full w-full object-cover"
+                fill
+                style={{ objectFit: "cover" }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-4">
