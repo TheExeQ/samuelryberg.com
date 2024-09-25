@@ -1,10 +1,14 @@
-export interface Project {
-  name: string;
-  studio: string;
-  date: Date;
+export interface ProjectSection {
+  title: string;
+  content: string;
+  mediaType: "image" | "video";
+  mediaSrc: string;
+  altText?: string;
+}
 
-  platform: string;
-
-  poster: string;
-  trailer: string;
+export interface PortfolioProjectProps {
+  title: string;
+  description: string;
+  trailerUrl: string;
+  sections: ProjectSection[];
 }
