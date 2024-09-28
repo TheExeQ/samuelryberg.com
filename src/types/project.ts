@@ -1,10 +1,30 @@
+import { StaticImageData } from "next/image";
+
 export interface Project {
-  name: string;
-  studio: string;
-  date: Date;
+  id: number;
+  href: string;
+  title: string;
+  image: StaticImageData;
+  technologies: string[];
+}
 
-  platform: string;
+export interface ProjectsProps {
+  title: string;
+  projects: Project[];
+}
 
-  poster: string;
-  trailer: string;
+export interface ProjectSection {
+  title: string;
+  content: JSX.Element;
+  mediaType: "image" | "video";
+  mediaSrc: string;
+  altText?: string;
+}
+
+export interface PortfolioProjectProps {
+  title: string;
+  description: JSX.Element;
+  trailerUrl: string;
+  additional?: JSX.Element;
+  sections?: ProjectSection[];
 }

@@ -112,18 +112,22 @@ export const nav: Array<NavLink> = [
   //   title: "Music",
   //   href: "/music",
   // },
+  // {
+  //   name: "Blog",
+  //   link: "/blog",
+  // },
   {
-    name: "Blog",
-    link: "/blog",
+    name: "About",
+    link: "/",
   },
   {
     name: "Contact",
     link: "/contact",
   },
-  {
-    name: "Mode",
-    link: "/dark",
-  },
+  // {
+  //   name: "Mode",
+  //   link: "/dark",
+  // },
 ];
 
 export const footer: Footer = {

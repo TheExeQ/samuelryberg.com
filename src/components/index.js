@@ -1,15 +1,7 @@
-import { ThemeProvider } from "./ui/themeProvider";
-import { ModeToggle } from "./ui/modeToggle";
 import { FloatingNav } from "./layout/floatingNav";
 import { Footer } from "./layout/footer";
-import { Spotlight } from "./ui/spotlight";
 import { ContactForm } from "./contactForm";
+import { ProjectView } from "./project-view";
+import { PortfolioProject } from "./project";
 
-export {
-  ThemeProvider,
-  ModeToggle,
-  FloatingNav,
-  Footer,
-  Spotlight,
-  ContactForm,
-};
+export { FloatingNav, Footer, ContactForm, ProjectView, PortfolioProject };
