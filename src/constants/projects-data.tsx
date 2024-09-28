@@ -17,15 +17,15 @@ export const Vipertrace: PortfolioProjectProps = {
   description: (
     <p>
       My eighth project at The Game Assembly was another game built on the same
-      engine "Volt" we created in our sixth project. Since we already had most
-      of the functionality required to create games, we were able to get started
-      a lot faster this time around.
+      engine &quot;Volt&quot; we created in our sixth project. Since we already
+      had most of the functionality required to create games, we were able to
+      get started a lot faster this time around.
       <br />
       <br />
       With a solid engine to work with and 8 weeks of full-time work ahead of
       us, we were prepared for much more this time around. The game we created
-      was a first-person shooter game called "Vipertrace" which was referenced
-      by Call of Duty: Black Ops - Zombies.
+      was a first-person shooter game called &quot;Vipertrace&quot; which was
+      referenced by Call of Duty: Black Ops - Zombies.
       <br />
       <br />
       In this futuristic sci-fi adventure, players step into the boots of a
