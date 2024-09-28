@@ -7,19 +7,22 @@ export function PortfolioProject({
   title,
   description,
   trailerUrl,
+  additional,
   sections,
 }: PortfolioProjectProps) {
   return (
     <div className="py-32">
-      <Card className="mx-auto w-full max-w-6xl">
+      <Card className="mx-auto w-full max-w-7xl">
         <CardHeader>
-          <CardTitle className="text-3xl font-bold">{title}</CardTitle>
+          <CardTitle className="my-6 text-center text-6xl font-bold">
+            {title}
+          </CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div className="mb-8 grid grid-cols-1 items-center justify-center gap-6 md:grid-cols-2">
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold">Project Overview</h2>
-              <p className="text-muted-foreground">{description}</p>
+              <div className="text-muted-foreground">{description}</div>
             </div>
             <div className="aspect-video">
               <iframe
@@ -32,14 +35,15 @@ export function PortfolioProject({
               ></iframe>
             </div>
           </div>
+          <div>{additional}</div>
           {sections.map((section, index) => (
             <div
               key={index}
-              className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} mb-12 gap-6`}
+              className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} mb-12 items-center gap-6`}
             >
               <div className="flex-1">
                 <h3 className="mb-2 text-xl font-semibold">{section.title}</h3>
-                <p className="text-muted-foreground">{section.content}</p>
+                <div className="text-muted-foreground">{section.content}</div>
               </div>
               <div className="flex-1">
                 {section.mediaType === "image" ? (

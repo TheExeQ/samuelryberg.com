@@ -1,6 +1,6 @@
 export interface ProjectSection {
   title: string;
-  content: string;
+  content: JSX.Element;
   mediaType: "image" | "video";
   mediaSrc: string;
   altText?: string;
@@ -8,7 +8,8 @@ export interface ProjectSection {
 
 export interface PortfolioProjectProps {
   title: string;
-  description: string;
+  description: JSX.Element;
   trailerUrl: string;
+  additional?: JSX.Element;
   sections: ProjectSection[];
 }
