@@ -36,7 +36,7 @@ export function PortfolioProject({
             </div>
           </div>
           <div>{additional}</div>
-          {sections.map((section, index) => (
+          {sections?.map((section, index) => (
             <div
               key={index}
               className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} mb-12 items-center gap-6`}

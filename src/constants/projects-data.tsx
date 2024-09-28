@@ -1,9 +1,6 @@
-import React, { FC } from "react";
-
-import { PortfolioProject } from "@/components";
 import { PortfolioProjectProps } from "@/types";
 
-const placeholderData: PortfolioProjectProps = {
+export const Vipertrace: PortfolioProjectProps = {
   title: "Vipertrace",
   description: (
     <p>
@@ -85,21 +82,3 @@ const placeholderData: PortfolioProjectProps = {
     },
   ],
 };
-
-const Project: FC = () => {
-  return (
-    <div className="relative min-h-screen">
-      <div className="absolute inset-0 -z-10 flex h-auto w-full items-center justify-center bg-grid-black/[0.05] dark:bg-grid-white/[0.05]" />
-
-      <PortfolioProject
-        title={placeholderData.title}
-        description={placeholderData.description}
-        additional={placeholderData.additional}
-        trailerUrl={placeholderData.trailerUrl}
-        sections={placeholderData.sections}
-      />
-    </div>
-  );
-};
-
-export default Project;

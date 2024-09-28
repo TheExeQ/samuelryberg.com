@@ -1,84 +1,87 @@
-import { Project } from "@/types";
+import { Project, PortfolioProjectProps } from "@/types";
 
-export const projects: Array<Project> = [
+import { Vipertrace } from "./projects-data";
+
+import RubberBanditsImage from "@public/projects/rubberbandits/rubberbandits.jpg";
+
+import PotionRunImage from "@public/projects/potionrun/potionrun.png";
+import HungryHouseImage from "@public/projects/hungryhouse/hungryhouse.png";
+import CuteEmUpImage from "@public/projects/cuteemup/cuteemup.png";
+import BardKnightImage from "@public/projects/bardknight/bardknight.png";
+import BoImage from "@public/projects/morningofbo/bo.png";
+import SpiteImage from "@public/projects/spiteyellowplague/spite.png";
+import EkayaImage from "@public/projects/ekayaandpebbles/ekaya.png";
+import VipertraceImage from "@public/projects/vipertrace/vipertrace.png";
+
+export const projectsData: { [key: string]: PortfolioProjectProps } = {
+  vipertrace: Vipertrace,
+};
+
+export const professionalProjects: Project[] = [
   {
-    name: "Potion Run",
-    studio: "Mythical Studios",
-    date: new Date("2021-10-29"),
+    id: 1,
+    href: "rubber-bandits",
+    title: "Rubber Bandits",
+    image: RubberBanditsImage,
+    technologies: ["Unity Engine"],
+  },
+];
 
-    platform: "Windows",
-
-    poster: "",
-    trailer: "",
+export const academicProjects: Project[] = [
+  {
+    id: 1,
+    href: "vipertrace",
+    title: "Vipertrace",
+    image: VipertraceImage,
+    technologies: [],
   },
   {
-    name: "Hungry House",
-    studio: "Smooth Brain Studios",
-    date: new Date("2021-12-17"),
-
-    platform: "Windows",
-
-    poster: "",
-    trailer: "",
+    id: 2,
+    href: "ekaya-pebbles",
+    title: "Ekaya & Pebbles",
+    image: EkayaImage,
+    technologies: [],
   },
   {
-    name: "Cute 'em up",
-    studio: "AGT",
-    date: new Date("2022-02-25"),
-
-    platform: "Windows",
-
-    poster: "",
-    trailer: "",
+    id: 3,
+    href: "spite-the-yellow-plague",
+    title: "Spite: The Yellow Plague",
+    image: SpiteImage,
+    technologies: [],
   },
   {
-    name: "Bard Knight",
-    studio: "Grump Studios",
-    date: new Date("2022-04-22"),
-
-    platform: "Windows",
-
-    poster: "",
-    trailer: "",
+    id: 4,
+    href: "bos-morning",
+    title: "Bo's Morning",
+    image: BoImage,
+    technologies: [],
   },
   {
-    name: "Bo's Morning",
-    studio: "Sad Centaur",
-    date: new Date("2022-06-17"),
-
-    platform: "Windows",
-
-    poster: "",
-    trailer: "",
+    id: 5,
+    href: "bard-knight",
+    title: "Bard Knight",
+    image: BardKnightImage,
+    technologies: [],
   },
   {
-    name: "Spite: The Yellow Plague",
-    studio: "Coinflip Studios",
-    date: new Date("2022-12-09"),
-
-    platform: "Windows",
-
-    poster: "",
-    trailer: "",
+    id: 6,
+    href: "cute-em-up",
+    title: "Cute 'em up",
+    image: CuteEmUpImage,
+    technologies: [],
   },
   {
-    name: "Ekaya & Pebbles",
-    studio: "Coinflip Studios",
-    date: new Date("2023-04-14"),
-
-    platform: "Windows",
-
-    poster: "",
-    trailer: "",
+    id: 7,
+    href: "hungry-house",
+    title: "Hungry House",
+    image: HungryHouseImage,
+    technologies: ["Unity Engine"],
   },
   {
-    name: "Vipertrace",
-    studio: "Coinflip Studios",
-    date: new Date("2023-06-16"),
-
-    platform: "Windows",
-
-    poster: "",
-    trailer: "",
+    id: 8,
+    href: "potion-run",
+    title: "Potion Run",
+    image: PotionRunImage,
+    technologies: ["Unity Engine"],
   },
 ];
