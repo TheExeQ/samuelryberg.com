@@ -1,6 +1,6 @@
 import { Project, PortfolioProjectProps } from "@/types";
 
-import { Vipertrace } from "./projects-data";
+import { Vipertrace, RubberBandits } from "./projects-data";
 
 import RubberBanditsImage from "@public/projects/rubberbandits/rubberbandits.jpg";
 
@@ -15,6 +15,7 @@ import VipertraceImage from "@public/projects/vipertrace/vipertrace.png";
 
 export const projectsData: { [key: string]: PortfolioProjectProps } = {
   vipertrace: Vipertrace,
+  "rubber-bandits": RubberBandits,
 };
 
 export const professionalProjects: Project[] = [
