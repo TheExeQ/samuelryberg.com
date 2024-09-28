@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { FC, PropsWithChildren } from "react";
 
-import { FloatingNav, Footer, ThemeProvider } from "@/components";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { ThemeProvider } from "@/components/ui/themeProvider";
+
+import { FloatingNav, Footer } from "@/components";
+
 import { meta, nav } from "@/constants/config";
 
 import "@/styles/globals.css";
@@ -32,11 +36,13 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => (
         enableSystem
         disableTransitionOnChange
       >
-        <div className="overflow-hidden">
-          <FloatingNav navItems={nav} />
-          <div className="min-h-screen">{children}</div>
-          <Footer />
-        </div>
+        <TooltipProvider>
+          <div className="overflow-hidden">
+            <FloatingNav navItems={nav} />
+            <div className="min-h-screen">{children}</div>
+            <Footer />
+          </div>
+        </TooltipProvider>
       </ThemeProvider>
     </body>
   </html>

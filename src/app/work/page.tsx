@@ -3,7 +3,8 @@ import Image, { StaticImageData } from "next/image";
 
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { SiUnity, SiUnrealengine, SiCplusplus } from "react-icons/si";
+import { Tooltip, TooltipTrigger } from "@/components/ui/tooltip";
+import { SiUnity, SiUnrealengine, SiCplusplus, SiCsharp } from "react-icons/si";
 
 import RubberBanditsImage from "@public/projects/rubberbandits/rubberbandits.jpg";
 
@@ -15,6 +16,7 @@ import BoImage from "@public/projects/morningofbo/bo.png";
 import SpiteImage from "@public/projects/spiteyellowplague/spite.png";
 import EkayaImage from "@public/projects/ekayaandpebbles/ekaya.png";
 import VipertraceImage from "@public/projects/vipertrace/vipertrace.png";
+import { TooltipContent } from "@radix-ui/react-tooltip";
 
 type Project = {
   id: number;
@@ -24,9 +26,10 @@ type Project = {
 };
 
 const technologyIcons: { [key: string]: JSX.Element } = {
-  cpp: <SiCplusplus className="h-4 w-4" />,
-  unity: <SiUnity className="h-4 w-4" />,
-  unreal: <SiUnrealengine className="h-4 w-4" />,
+  "C++": <SiCplusplus className="h-4 w-4" />,
+  "C#": <SiCsharp className="h-4 w-4" />,
+  "Unity Engine": <SiUnity className="h-4 w-4" />,
+  "Unreal Engine": <SiUnrealengine className="h-4 w-4" />,
 };
 
 const professionalProjects: Project[] = [
@@ -34,7 +37,7 @@ const professionalProjects: Project[] = [
     id: 1,
     title: "Rubber Bandits",
     image: RubberBanditsImage,
-    technologies: ["unity"],
+    technologies: ["Unity Engine", "C#"],
   },
 ];
 
@@ -43,49 +46,49 @@ const academicProjects: Project[] = [
     id: 1,
     title: "Vipertrace",
     image: VipertraceImage,
-    technologies: ["cpp"],
+    technologies: ["C++", "C#"],
   },
   {
     id: 2,
     title: "Ekaya & Pebbles",
     image: EkayaImage,
-    technologies: ["cpp"],
+    technologies: ["C++", "C#"],
   },
   {
     id: 3,
     title: "Spite: The Yellow Plague",
     image: SpiteImage,
-    technologies: ["cpp"],
+    technologies: ["C++"],
   },
   {
     id: 4,
     title: "Bo's Morning",
     image: BoImage,
-    technologies: ["cpp"],
+    technologies: ["C++"],
   },
   {
     id: 5,
     title: "Bard Knight",
     image: BardKnightImage,
-    technologies: ["cpp"],
+    technologies: ["C++"],
   },
   {
     id: 6,
     title: "Cute 'em up",
     image: CuteEmUpImage,
-    technologies: ["cpp"],
+    technologies: ["C++"],
   },
   {
     id: 7,
     title: "Hungry House",
     image: HungryHouseImage,
-    technologies: ["unity"],
+    technologies: ["Unity Engine", "C#"],
   },
   {
     id: 8,
     title: "Potion Run",
     image: PotionRunImage,
-    technologies: ["unity"],
+    technologies: ["Unity Engine", "C#"],
   },
 ];
 
@@ -124,13 +127,16 @@ const Projects: FC<ProjectsProps> = ({ title, projects }) => {
                 </h2>
                 <div className="flex space-x-2">
                   {project.technologies.map((tech) => (
-                    <Badge
-                      key={tech}
-                      variant="secondary"
-                      className="rounded-full p-1"
-                    >
-                      {technologyIcons[tech]}
-                    </Badge>
+                    <Tooltip key={tech}>
+                      <TooltipTrigger asChild>
+                        <Badge variant="secondary" className="rounded-full p-1">
+                          {technologyIcons[tech]}
+                        </Badge>
+                      </TooltipTrigger>
+                      <TooltipContent className="rounded-md bg-background px-2 py-1 text-foreground shadow-lg">
+                        <p>{tech}</p>
+                      </TooltipContent>
+                    </Tooltip>
                   ))}
                 </div>
               </div>
