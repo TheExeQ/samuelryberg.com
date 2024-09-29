@@ -47,7 +47,7 @@ export function ContactForm() {
               <Textarea
                 id="message"
                 placeholder="Hello there!"
-                className="h-32"
+                className="h-32 max-h-72"
               />
             </div>
           </div>
