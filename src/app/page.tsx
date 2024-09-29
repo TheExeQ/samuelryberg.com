@@ -31,10 +31,10 @@ const Home: FC = () => (
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <Button size="lg" asChild>
-              <Link href="/contact">Get in Touch</Link>
+              <Link href="/work">View Projects</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href="/work">View Projects</Link>
+              <Link href="/about">About me</Link>
             </Button>
           </div>
         </div>

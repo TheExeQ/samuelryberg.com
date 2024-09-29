@@ -118,7 +118,7 @@ export const nav: Array<NavLink> = [
   // },
   {
     name: "About",
-    link: "/",
+    link: "/about",
   },
   {
     name: "Contact",
