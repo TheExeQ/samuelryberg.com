@@ -1,5 +1,7 @@
 import { PortfolioProjectProps } from "@/types";
 
+import Placeholder from "@public/placeholder.svg";
+
 export const Vipertrace: PortfolioProjectProps = {
   title: "Vipertrace",
   description: (
@@ -46,7 +48,6 @@ export const Vipertrace: PortfolioProjectProps = {
           nemo officiis dolorem ut!
         </p>
       ),
-      mediaType: "video",
       mediaSrc: "https://www.youtube.com/embed/OVYgWwEUw1o",
     },
     {
@@ -59,7 +60,6 @@ export const Vipertrace: PortfolioProjectProps = {
           nemo officiis dolorem ut!
         </p>
       ),
-      mediaType: "video",
       mediaSrc: "https://www.youtube.com/embed/OuYq4GHIHKY",
     },
     {
@@ -72,22 +72,8 @@ export const Vipertrace: PortfolioProjectProps = {
           nemo officiis dolorem ut!
         </p>
       ),
-      mediaType: "video",
       mediaSrc: "https://www.youtube.com/embed/LGPHe8XiDEU",
     },
-    {
-      title: "Placeholder",
-      content: (
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-          doloremque dolorum nihil magni repellat quo, dolores harum blanditiis
-          temporibus maiores iste, consequatur architecto excepturi quis? Rerum
-          nemo officiis dolorem ut!
-        </p>
-      ),
-      mediaType: "image",
-      mediaSrc: "/placeholder.svg",
-      altText: "Placeholder",
-    },
   ],
+  images: [Placeholder, Placeholder, Placeholder, Placeholder, Placeholder],
 };

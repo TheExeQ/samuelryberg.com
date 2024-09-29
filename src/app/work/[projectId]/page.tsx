@@ -20,6 +20,7 @@ const ProjectSlug: FC<{ params: { projectId: string } }> = ({ params }) => {
         additional={projectData.additional}
         trailerUrl={projectData.trailerUrl}
         sections={projectData.sections}
+        images={projectData.images}
       />
     </div>
   );

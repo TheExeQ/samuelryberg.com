@@ -16,9 +16,7 @@ export interface ProjectsProps {
 export interface ProjectSection {
   title: string;
   content: JSX.Element;
-  mediaType: "image" | "video";
   mediaSrc: string;
-  altText?: string;
 }
 
 export interface PortfolioProjectProps {
@@ -27,4 +25,5 @@ export interface PortfolioProjectProps {
   trailerUrl: string;
   additional?: JSX.Element;
   sections?: ProjectSection[];
+  images?: StaticImageData[];
 }

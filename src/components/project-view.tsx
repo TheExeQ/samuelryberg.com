@@ -32,6 +32,8 @@ export const ProjectView: FC<ProjectsProps> = ({ title, projects }) => {
                   src={project.image}
                   alt={`${project.title} wallpaper`}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  quality={75}
                   style={{ objectFit: "cover" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />

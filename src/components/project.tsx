@@ -9,6 +9,7 @@ export function PortfolioProject({
   trailerUrl,
   additional,
   sections,
+  images,
 }: PortfolioProjectProps) {
   return (
     <div className="py-32">
@@ -46,29 +47,38 @@ export function PortfolioProject({
                 <div className="text-muted-foreground">{section.content}</div>
               </div>
               <div className="flex-1">
-                {section.mediaType === "image" ? (
-                  <Image
+                <div className="aspect-video">
+                  <iframe
+                    width="100%"
+                    height="100%"
                     src={section.mediaSrc}
-                    alt={section.altText || `${section.title} image`}
-                    width={500}
-                    height={300}
-                    className="h-auto w-full rounded-lg object-cover"
-                  />
-                ) : (
-                  <div className="aspect-video">
-                    <iframe
-                      width="100%"
-                      height="100%"
-                      src={section.mediaSrc}
-                      title={section.title}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                )}
+                    title={section.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               </div>
             </div>
           ))}
+          {images && (
+            <>
+              <h2 className="mb-6 text-center text-3xl font-bold">Gallery</h2>
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {images?.map((image, index) => (
+                  <div key={index} className="relative aspect-[4/3] w-full">
+                    <Image
+                      src={image}
+                      alt={`${title} gallary image ${index}`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      quality={75}
+                      className="rounded-lg bg-foreground/50 object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
         </CardContent>
       </Card>
     </div>
