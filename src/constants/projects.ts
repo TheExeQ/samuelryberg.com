@@ -1,6 +1,14 @@
 import { Project, PortfolioProjectProps } from "@/types";
 
-import { Vipertrace, RubberBandits } from "./projects-data";
+import { PotionRun } from "./project-data/potionrun";
+import { HungryHouse } from "./project-data/hungryhouse";
+import { CuteEmUp } from "./project-data/cuteemup";
+import { BardKnight } from "./project-data/bardknight";
+import { BosMorning } from "./project-data/bosmorning";
+import { Spite } from "./project-data/spite";
+import { Ekaya } from "./project-data/ekaya";
+import { Vipertrace } from "./project-data/vipertrace";
+import { RubberBandits } from "./project-data/rubberbandits";
 
 import RubberBanditsImage from "@public/projects/rubberbandits/rubberbandits.jpg";
 
@@ -14,8 +22,15 @@ import EkayaImage from "@public/projects/ekayaandpebbles/ekaya.png";
 import VipertraceImage from "@public/projects/vipertrace/vipertrace.png";
 
 export const projectsData: { [key: string]: PortfolioProjectProps } = {
-  vipertrace: Vipertrace,
   "rubber-bandits": RubberBandits,
+  vipertrace: Vipertrace,
+  "ekaya-pebbles": Ekaya,
+  "spite-the-yellow-plague": Spite,
+  "bos-morning": BosMorning,
+  "bard-knight": BardKnight,
+  "cute-em-up": CuteEmUp,
+  "hungry-house": HungryHouse,
+  "potion-run": PotionRun,
 };
 
 export const professionalProjects: Project[] = [
