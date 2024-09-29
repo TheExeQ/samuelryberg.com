@@ -12,7 +12,7 @@ export function PortfolioProject({
 }: PortfolioProjectProps) {
   return (
     <div className="py-32">
-      <Card className="mx-auto w-full max-w-7xl">
+      <Card className="mx-auto w-full max-w-7xl bg-accent">
         <CardHeader>
           <CardTitle className="my-6 text-center text-6xl font-bold">
             {title}
