@@ -11,9 +11,9 @@ export const RubberBandits: PortfolioProjectProps = {
   ),
   trailerUrl: "https://www.youtube.com/embed/fEosWC6hAb4",
   additional: (
-    <div className="my-4 border border-red-600">
+    <div className="my-4">
       <iframe
-        src="https://store.steampowered.com/widget/1206610/?wmode=opaque"
+        src="https://store.steampowered.com/widget/1206610"
         width="100%"
         height="200"
       ></iframe>
@@ -48,9 +48,9 @@ export const Vipertrace: PortfolioProjectProps = {
   ),
   trailerUrl: "https://www.youtube.com/embed/HKU5GvgAssY",
   additional: (
-    <div className="my-4 border border-red-600">
+    <div className="my-4">
       <iframe
-        src="https://store.steampowered.com/widget/2358720/?wmode=opaque"
+        src="https://store.steampowered.com/widget/1264200"
         width="100%"
         height="200"
       ></iframe>

@@ -10,8 +10,6 @@ export function PortfolioProject({
   additional,
   sections,
 }: PortfolioProjectProps) {
-  return <div className="w-full py-32">{additional}</div>;
-
   return (
     <div className="py-32">
       <Card className="mx-auto w-full max-w-7xl">

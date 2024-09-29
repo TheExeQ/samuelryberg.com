@@ -64,6 +64,10 @@
     @apply border-border;
   }
 
+  iframe {
+    color-scheme: none;
+  }
+
   body {
     @apply bg-background text-foreground;
   }
