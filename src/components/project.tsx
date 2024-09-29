@@ -21,7 +21,7 @@ export function PortfolioProject({
         <CardContent>
           <div className="mb-8 grid grid-cols-1 items-center justify-center gap-6 md:grid-cols-2">
             <div className="space-y-4">
-              <h2 className="text-2xl font-semibold">Project Overview</h2>
+              <h2 className="text-2xl font-semibold">What is {title}?</h2>
               <div className="text-muted-foreground">{description}</div>
             </div>
             <div className="aspect-video">
