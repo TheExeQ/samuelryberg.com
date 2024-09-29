@@ -10,6 +10,8 @@ export function PortfolioProject({
   additional,
   sections,
 }: PortfolioProjectProps) {
+  return <div className="w-full py-32">{additional}</div>;
+
   return (
     <div className="py-32">
       <Card className="mx-auto w-full max-w-7xl">
@@ -35,7 +37,7 @@ export function PortfolioProject({
               ></iframe>
             </div>
           </div>
-          <div>{additional}</div>
+          <div className="w-full">{additional}</div>
           {sections?.map((section, index) => (
             <div
               key={index}
