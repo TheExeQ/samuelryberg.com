@@ -5,9 +5,9 @@ export const BosMorning: PortfolioProjectProps = {
   description: (
     <p>
       My fifth project at The Game Assembly was an adventure top-down game
-      called "Bo's Morning." The game revolved around a farmer named Bo, who had
-      to save his farm from a plague that had caused all animals and plants in
-      the area to become evil.
+      called &quot;Bo&apos;s Morning.&quot; The game revolved around a farmer
+      named Bo, who had to save his farm from a plague that had caused all
+      animals and plants in the area to become evil.
       <br />
       <br />
       In order to save his farm, Bo had to eliminate the infectious flower that

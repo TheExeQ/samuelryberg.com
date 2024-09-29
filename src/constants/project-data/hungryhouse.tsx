@@ -5,12 +5,13 @@ export const HungryHouse: PortfolioProjectProps = {
   description: (
     <p>
       During my second project I worked on a mobile puzzle game called Hungry
-      House. The game's objective was to move a group of frogs between
+      House. The game&apos;s objective was to move a group of frogs between
       platforms, in order to feed a hungry living house creature. <br />
       <br />
-      What made the game challenging was that the creature couldn't be overfed
-      or underfed, so players had to think strategically about how to move the
-      frogs in order to get the right amount of food to the creature. <br />
+      What made the game challenging was that the creature couldn&apos;t be
+      overfed or underfed, so players had to think strategically about how to
+      move the frogs in order to get the right amount of food to the creature.{" "}
+      <br />
       <br />
       As the game progressed, it became even more challenging as obstacles were
       introduced. These obstacles required players to carefully consider the
@@ -37,7 +38,8 @@ export const HungryHouse: PortfolioProjectProps = {
             className="text-blue-400 underline"
             href="https://www.therookies.co/entries/16448"
           >
-            Mobile Game of the Year - People's Choice at The Rookies Awards 2022
+            Mobile Game of the Year - People&apos;s Choice at The Rookies Awards
+            2022
           </a>
         </li>
       </ul>

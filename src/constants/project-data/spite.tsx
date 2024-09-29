@@ -4,8 +4,8 @@ export const Spite: PortfolioProjectProps = {
   title: "Spite: The Yellow Plague",
   description: (
     <p>
-      My sixth project at The Game Assembly was a dungeon crawler called "Spite:
-      The Yellow Plague". <br />
+      My sixth project at The Game Assembly was a dungeon crawler called
+      &quot;Spite: The Yellow Plague&quot;. <br />
       <br />
       The game was about a witch hunter who had been recruited by a village to
       end the yellow plague that was spreading in the swamp next to the village.
@@ -14,10 +14,10 @@ export const Spite: PortfolioProjectProps = {
       return for parts of his soul. <br />
       <br />
       What made this project special was that it was the first time we built our
-      own game engine from scratch. The engine was named "Volt" and creating it
-      was a challenging task, but also very fun and exciting. We had to think
-      about every aspect of game development, from the physics engine to the
-      rendering pipeline.
+      own game engine from scratch. The engine was named &quot;Volt&quot; and
+      creating it was a challenging task, but also very fun and exciting. We had
+      to think about every aspect of game development, from the physics engine
+      to the rendering pipeline.
     </p>
   ),
   trailerUrl: "https://www.youtube.com/embed/g8_7V2Aum3k",
