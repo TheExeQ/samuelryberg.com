@@ -1,4 +1,4 @@
-import { Meta, Footer, NavLink, Technology } from "@/types";
+import { Meta, Footer, NavLink, Technology, Experience } from "@/types";
 
 export const meta: Meta = {
   title: "Samuel Ryberg | Official Website",
@@ -39,6 +39,37 @@ export const header = {
   description: meta.description,
 };
 
+export const experiences: Array<Experience> = [
+  {
+    year: "2024-Present",
+    title: "Associate Programmer",
+    company: "Flashbulb Games",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit ducimus adipisci neque ab voluptatibus quisquam, doloribus obcaecati reiciendis fuga porro commodi nam illo omnis voluptas et accusantium cupiditate aliquam.",
+  },
+  {
+    year: "2023-2024",
+    title: "Programmer Intern",
+    company: "Flashbulb Games",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit ducimus adipisci neque ab voluptatibus quisquam, doloribus obcaecati reiciendis fuga porro commodi nam illo omnis voluptas et accusantium cupiditate aliquam.",
+  },
+  {
+    year: "2021-2024",
+    title: "Game Programming Student",
+    company: "The Game Assembly",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit ducimus adipisci neque ab voluptatibus quisquam, doloribus obcaecati reiciendis fuga porro commodi nam illo omnis voluptas et accusantium cupiditate aliquam.",
+  },
+  {
+    year: "2017-2020",
+    title: "High School Student",
+    company: "LBS Kreativa Gymnasiet",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos velit ducimus adipisci neque ab voluptatibus quisquam, doloribus obcaecati reiciendis fuga porro commodi nam illo omnis voluptas et accusantium cupiditate aliquam.",
+  },
+];
+
 export const technologies: Array<Technology> = [
   {
     name: "C++",
@@ -51,7 +82,7 @@ export const technologies: Array<Technology> = [
     href: "https://unity.com/",
   },
   {
-    name: "Unreal",
+    name: "Unreal Engine",
     href: "https://unrealengine.com/",
   },
   {
@@ -67,7 +98,11 @@ export const technologies: Array<Technology> = [
     href: "https://github.com/",
   },
   {
-    name: "NodeJS",
+    name: "Docker",
+    href: "https://docker.com/",
+  },
+  {
+    name: "Node.js",
     href: "https://nodejs.org/",
   },
   {
@@ -75,11 +110,11 @@ export const technologies: Array<Technology> = [
     href: "https://react.dev/",
   },
   {
-    name: "NextJS",
+    name: "Next.js",
     href: "https://nextjs.org/",
   },
   {
-    name: "TailwindCSS",
+    name: "Tailwind CSS",
     href: "https://tailwindcss.com/",
   },
   {
@@ -88,10 +123,6 @@ export const technologies: Array<Technology> = [
   {
     name: "TypeScript",
     href: "https://www.typescriptlang.org/",
-  },
-  {
-    name: "Docker",
-    href: "https://docker.com/",
   },
   {
     name: "Vercel",

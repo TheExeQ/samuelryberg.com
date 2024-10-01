@@ -1,7 +1,5 @@
 import { PortfolioProjectProps } from "@/types";
 
-import Placeholder from "@public/placeholder.svg";
-
 export const Vipertrace: PortfolioProjectProps = {
   title: "Vipertrace",
   description: (
@@ -29,51 +27,10 @@ export const Vipertrace: PortfolioProjectProps = {
   ),
   trailerUrl: "https://www.youtube.com/embed/HKU5GvgAssY",
   additional: (
-    <div className="my-4">
-      <iframe
-        src="https://store.steampowered.com/widget/1264200"
-        width="100%"
-        height="200"
-      ></iframe>
-    </div>
+    <iframe
+      src="https://store.steampowered.com/widget/1264200"
+      width="100%"
+      height="200"
+    />
   ),
-  sections: [
-    {
-      title: "Recast/Detour Navigation",
-      content: (
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-          doloremque dolorum nihil magni repellat quo, dolores harum blanditiis
-          temporibus maiores iste, consequatur architecto excepturi quis? Rerum
-          nemo officiis dolorem ut!
-        </p>
-      ),
-      mediaSrc: "https://www.youtube.com/embed/OVYgWwEUw1o",
-    },
-    {
-      title: "Weapon System",
-      content: (
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-          doloremque dolorum nihil magni repellat quo, dolores harum blanditiis
-          temporibus maiores iste, consequatur architecto excepturi quis? Rerum
-          nemo officiis dolorem ut!
-        </p>
-      ),
-      mediaSrc: "https://www.youtube.com/embed/OuYq4GHIHKY",
-    },
-    {
-      title: "Mystery Box",
-      content: (
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-          doloremque dolorum nihil magni repellat quo, dolores harum blanditiis
-          temporibus maiores iste, consequatur architecto excepturi quis? Rerum
-          nemo officiis dolorem ut!
-        </p>
-      ),
-      mediaSrc: "https://www.youtube.com/embed/LGPHe8XiDEU",
-    },
-  ],
-  images: [Placeholder, Placeholder, Placeholder, Placeholder, Placeholder],
 };

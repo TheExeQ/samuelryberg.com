@@ -11,12 +11,10 @@ export const RubberBandits: PortfolioProjectProps = {
   ),
   trailerUrl: "https://www.youtube.com/embed/fEosWC6hAb4",
   additional: (
-    <div className="my-4">
-      <iframe
-        src="https://store.steampowered.com/widget/1206610"
-        width="100%"
-        height="200"
-      ></iframe>
-    </div>
+    <iframe
+      src="https://store.steampowered.com/widget/1206610"
+      width="100%"
+      height="200"
+    />
   ),
 };

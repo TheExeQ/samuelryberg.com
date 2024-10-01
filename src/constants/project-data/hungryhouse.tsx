@@ -29,6 +29,7 @@ export const HungryHouse: PortfolioProjectProps = {
           <a
             className="text-blue-400 underline"
             href="https://www.gameawards.se/2022-nominees"
+            target="_blank"
           >
             Mobile Game of the Year and Best Art at the Swedish Game Awards 2022
           </a>
@@ -37,6 +38,7 @@ export const HungryHouse: PortfolioProjectProps = {
           <a
             className="text-blue-400 underline"
             href="https://www.therookies.co/entries/16448"
+            target="_blank"
           >
             Mobile Game of the Year - People&apos;s Choice at The Rookies Awards
             2022
