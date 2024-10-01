@@ -40,13 +40,17 @@ const About: FC = () => {
           <div className="flex flex-wrap justify-center gap-4">
             {technologies.map((tech, index) => (
               <Button key={index} variant="secondary" asChild>
-                <Link
-                  href={tech.href ?? ""}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {tech.name}
-                </Link>
+                {tech.href ? (
+                  <Link
+                    href={tech.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {tech.name}
+                  </Link>
+                ) : (
+                  <span>{tech.name}</span>
+                )}
               </Button>
             ))}
           </div>
