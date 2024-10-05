@@ -16,9 +16,8 @@ const About: FC = () => {
           <h2 className="mb-8 text-3xl font-bold">About Me</h2>
 
           <p className="mb-12 text-lg text-muted-foreground">
-            I&apos;m a Gameplay, Tools and Backend Engineer from Sweden who
-            enjoys creating games. In my free time, I like to cook and
-            make/learn music.
+            I&apos;m a Software Engineer from Sweden who enjoys creating games.
+            In my free time, I like to cook and make/learn music.
             <br />
             <br />
             I&apos;m always looking to learn new things and expand my knowledge
@@ -64,7 +63,7 @@ const About: FC = () => {
                 <div className="mb-2 text-sm text-muted-foreground">
                   {exp.company}
                 </div>
-                <p>{exp.description}</p>
+                <div>{exp.description}</div>
               </Card>
             ))}
           </div>

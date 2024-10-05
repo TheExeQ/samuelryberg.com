@@ -13,7 +13,7 @@ export const Vipertrace: PortfolioProjectProps = {
       With a solid engine to work with and 8 weeks of full-time work ahead of
       us, we were prepared for much more this time around. The game we created
       was a first-person shooter game called &quot;Vipertrace&quot; which was
-      referenced by Call of Duty: Black Ops - Zombies.
+      inspired by Call of Duty: Black Ops - Zombies.
       <br />
       <br />
       In this futuristic sci-fi adventure, players step into the boots of a
