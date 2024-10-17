@@ -9,8 +9,10 @@ import { Spite } from "./project-data/spite";
 import { Ekaya } from "./project-data/ekaya";
 import { Vipertrace } from "./project-data/vipertrace";
 import { RubberBandits } from "./project-data/rubberbandits";
+import { Warriors } from "./project-data/warriors";
 
 import RubberBanditsImage from "@public/projects/rubberbandits/rubberbandits.jpg";
+import WarriorsImage from "@public/projects/warriors/warriors.jpg";
 
 import PotionRunImage from "@public/projects/potionrun/potionrun.png";
 import HungryHouseImage from "@public/projects/hungryhouse/hungryhouse.png";
@@ -22,6 +24,7 @@ import EkayaImage from "@public/projects/ekayaandpebbles/ekaya.png";
 import VipertraceImage from "@public/projects/vipertrace/vipertrace.png";
 
 export const projectsData: { [key: string]: PortfolioProjectProps } = {
+  warriors: Warriors,
   "rubber-bandits": RubberBandits,
   vipertrace: Vipertrace,
   "ekaya-pebbles": Ekaya,
@@ -36,6 +39,13 @@ export const projectsData: { [key: string]: PortfolioProjectProps } = {
 export const professionalProjects: Project[] = [
   {
     id: 1,
+    href: "warriors",
+    title: "Warriors",
+    image: WarriorsImage,
+    technologies: ["Unity Engine"],
+  },
+  {
+    id: 2,
     href: "rubber-bandits",
     title: "Rubber Bandits",
     image: RubberBanditsImage,
