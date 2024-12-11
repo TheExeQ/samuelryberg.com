@@ -11,7 +11,7 @@ export const Warriors: PortfolioProjectProps = {
       the fiercest!
     </p>
   ),
-  trailerUrl: "https://www.youtube.com/embed/Nn_iHewmFPo",
+  trailerUrl: "https://www.youtube.com/embed/kiYflJp1yoA",
   additional: (
     <iframe
       src="https://store.steampowered.com/widget/3268430"
