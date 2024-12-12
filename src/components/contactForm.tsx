@@ -19,22 +19,28 @@ import { ContactFormInfo } from "@/types/contact";
 
 export function ContactForm() {
   const maxMessageLength = 1000;
-  
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  
+
   const postToApi = async () => {
     const payload: ContactFormInfo = { name, email, message };
-    
+
     if (name.length > 0 && email.length > 0 && message.length > 0) {
-      await fetch("/api/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         body: JSON.stringify(payload),
       });
+
+      alert(
+        response.status === 200
+          ? "Success, message has been sent!"
+          : `Error! ${response.statusText}`
+      );
     }
   };
-  
+
   return (
     <Card className="w-[500px]">
       <CardHeader>

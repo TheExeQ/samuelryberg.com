@@ -2,7 +2,7 @@ import { ContactFormInfo } from "@/types/contact";
 
 export async function POST(request: Request) {
   const { name, email, message }: ContactFormInfo = await request.json();
-  
+
   const webhookUrl = process.env.DISCORD_WEBHOOK;
   const payload = {
     username: "Contact Form Bot",
@@ -20,7 +20,7 @@ export async function POST(request: Request) {
   };
 
   if (!webhookUrl) {
-    return new Response("ERROR");
+    return new Response("ERROR", { status: 500 });
   }
 
   try {
@@ -32,13 +32,11 @@ export async function POST(request: Request) {
       body: JSON.stringify(payload),
     });
 
-    if (response.ok) {
-      console.log("Message sent successfully!");
-    } else {
-      console.error("Error response:", await response.text());
+    if (!response.ok) {
+      return new Response("ERROR", { status: 400 });
     }
   } catch (error) {
-    console.error("Error:", error);
+    return new Response("ERROR", { status: 500 });
   }
 
   return new Response("OK");
