@@ -3,6 +3,7 @@ import { Meta, Footer, NavLink, Technology, Experience } from "@/types";
 export const meta: Meta = {
   title: "Samuel Ryberg | Official Website",
   author: "Samuel Ryberg",
+  email: "samuel.ryberg@gmail.com",
   description: "Explore Samuel Ryberg's projects, skills, and experience.",
   keywords: [
     "Samuel Ryberg",

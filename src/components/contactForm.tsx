@@ -15,6 +15,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
+import { meta } from "@/constants/config";
+
 import { ContactFormInfo } from "@/types/contact";
 
 export function ContactForm() {
@@ -102,7 +104,7 @@ export function ContactForm() {
       <CardFooter className="justify-between">
         <Button onClick={postToApi}>Send</Button>
         <p className="text-sm uppercase text-muted-foreground">OR</p>
-        <a href="mailto:samuel.ryberg@gmail.com">Mail me!</a>
+        <a href={`mailto:${meta.email}`}>Mail me!</a>
       </CardFooter>
     </Card>
   );
