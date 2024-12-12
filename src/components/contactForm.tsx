@@ -15,15 +15,25 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
+import { ContactFormInfo } from "@/types/contact";
+
 export function ContactForm() {
+  const maxMessageLength = 1000;
+  
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   
   const postToApi = async () => {
-    const payload = {name, email, message}
-    await fetch('/api/contact', {method: 'POST', body: JSON.stringify(payload)})
-  }
+    const payload: ContactFormInfo = { name, email, message };
+    
+    if (name.length > 0 && email.length > 0 && message.length > 0) {
+      await fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify(payload),
+      });
+    }
+  };
   
   return (
     <Card className="w-[500px]">
@@ -43,13 +53,21 @@ export function ContactForm() {
               <Label htmlFor="name">
                 Name<span className="text-red-500">*</span>
               </Label>
-              <Input id="name" placeholder="John Doe" onChange={(e) => setName(e.target.value)} />
+              <Input
+                id="name"
+                placeholder="John Doe"
+                onChange={(e) => setName(e.target.value)}
+              />
             </div>
             <div className="flex flex-col space-y-1.5">
               <Label htmlFor="mail">
                 Email<span className="text-red-500">*</span>
               </Label>
-              <Input id="mail" placeholder="john@doe.com" onChange={(e) => setEmail(e.target.value)} />
+              <Input
+                id="mail"
+                placeholder="john@doe.com"
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
             <div className="flex flex-col space-y-1.5">
               <Label htmlFor="message">
@@ -59,15 +77,25 @@ export function ContactForm() {
                 id="message"
                 placeholder="Hello there!"
                 className="h-32 max-h-72"
+                maxLength={maxMessageLength}
                 onChange={(e) => setMessage(e.target.value)}
               />
+              <p
+                className={`text-sm ${
+                  message.length > maxMessageLength * 0.9
+                    ? "text-red-500"
+                    : "text-muted-foreground"
+                }`}
+              >
+                {message.length} / {maxMessageLength}
+              </p>
             </div>
           </div>
         </form>
       </CardContent>
       <CardFooter className="justify-between">
         <Button onClick={postToApi}>Send</Button>
-        <p className="text-sm text-muted-foreground uppercase">OR</p>
+        <p className="text-sm uppercase text-muted-foreground">OR</p>
         <a href="mailto:samuel.ryberg@gmail.com">Mail me!</a>
       </CardFooter>
     </Card>
