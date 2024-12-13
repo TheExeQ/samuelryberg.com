@@ -6,4 +6,4 @@
   </a>
 </div>
 
-🌐 My personal portfolio made with Next.js and Tailwind.css
+🌐 My personal portfolio made with Next.js and Tailwind.css.
