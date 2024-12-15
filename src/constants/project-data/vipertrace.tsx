@@ -32,5 +32,5 @@ export const Vipertrace: PortfolioProjectProps = {
       width="100%"
       height="200"
     />
-  ),
+  )
 };

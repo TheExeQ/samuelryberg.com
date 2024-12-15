@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ProjectCarousel } from "@/components";
+
 import { PortfolioProjectProps } from "@/types";
 
 export function PortfolioProject({
@@ -37,6 +39,7 @@ export function PortfolioProject({
             </div>
           </div>
           {additional && <div className="mt-8">{additional}</div>}
+          <div className="mt-4">{true && <ProjectCarousel />}</div>
           {sections?.map((section, index) => (
             <div
               key={index}
