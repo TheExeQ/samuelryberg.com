@@ -47,4 +47,18 @@ export const HungryHouse: PortfolioProjectProps = {
       </ul>
     </div>
   ),
+  sections: [
+    {
+      description: "Creature Animations",
+      mediaSrc: "https://www.youtube.com/embed/uvDD25SQ_r4"
+    },
+    {
+      description: "Main Menu",
+      mediaSrc: "https://www.youtube.com/embed/quxzQwJaG_M"
+    },
+    {
+      description: "Level Select",
+      mediaSrc: "https://www.youtube.com/embed/etTgkPEaUvY"
+    }
+  ]
 };

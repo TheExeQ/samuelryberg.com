@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ProjectCarousel } from "@/components";
 
@@ -11,7 +10,6 @@ export function PortfolioProject({
   trailerUrl,
   additional,
   sections,
-  images,
 }: PortfolioProjectProps) {
   return (
     <div className="py-32">
@@ -39,48 +37,10 @@ export function PortfolioProject({
             </div>
           </div>
           {additional && <div className="mt-8">{additional}</div>}
-          <div className="mt-4">{true && <ProjectCarousel />}</div>
-          {sections?.map((section, index) => (
-            <div
-              key={index}
-              className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} mb-12 items-center gap-6`}
-            >
-              <div className="flex-1">
-                <h3 className="mb-2 text-xl font-semibold">{section.title}</h3>
-                <div className="text-muted-foreground">{section.content}</div>
-              </div>
-              <div className="flex-1">
-                <div className="aspect-video">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src={section.mediaSrc}
-                    title={section.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
+          {sections && (
+            <div className="mt-4">
+              <ProjectCarousel tabs={sections} />
             </div>
-          ))}
-          {images && (
-            <>
-              <h2 className="mb-6 text-center text-3xl font-bold">Gallery</h2>
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {images?.map((image, index) => (
-                  <div key={index} className="relative aspect-[4/3] w-full">
-                    <Image
-                      src={image}
-                      alt={`${title} gallary image ${index}`}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      quality={75}
-                      className="rounded-lg bg-foreground/50 object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
-            </>
           )}
         </CardContent>
       </Card>

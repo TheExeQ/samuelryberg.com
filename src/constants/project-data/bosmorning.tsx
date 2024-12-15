@@ -17,4 +17,22 @@ export const BosMorning: PortfolioProjectProps = {
     </p>
   ),
   trailerUrl: "https://www.youtube.com/embed/kqHU9M_ITfA",
+  sections: [
+    {
+      description: "Rabbit Enemy",
+      mediaSrc: "https://www.youtube.com/embed/lDRKc5rsBpk"
+    },
+    {
+      description: "Hedgehog Enemy",
+      mediaSrc: "https://www.youtube.com/embed/z9oXHQRuVUw"
+    },
+    {
+      description: "Bird Enemy",
+      mediaSrc: "https://www.youtube.com/embed/zvYMHCj5zBE"
+    },
+    {
+      description: "Frog Enemy",
+      mediaSrc: "https://www.youtube.com/embed/y-tYkYYEvYQ"
+    }
+  ]
 };

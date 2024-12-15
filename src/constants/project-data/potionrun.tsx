@@ -16,4 +16,14 @@ export const PotionRun: PortfolioProjectProps = {
     </p>
   ),
   trailerUrl: "https://www.youtube.com/embed/_7bgvikaYsM",
+  sections: [
+    {
+      description: "Stumble Obstacles & Monster",
+      mediaSrc: "https://www.youtube.com/embed/zELoiXL5ugU"
+    },
+    {
+      description: "Level Transitions",
+      mediaSrc: "https://www.youtube.com/embed/9i9VmDBr4OU"
+    }
+  ]
 };
