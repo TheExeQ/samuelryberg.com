@@ -16,4 +16,14 @@ export const BardKnight: PortfolioProjectProps = {
     </p>
   ),
   trailerUrl: "https://www.youtube.com/embed/d5nEUgpLKEA",
+  sections: [
+    {
+      description: "Player Movement",
+      mediaSrc: "https://www.youtube.com/embed/tHaz97BsMV4"
+    },
+    {
+      description: "Moving Platforms",
+      mediaSrc: "https://www.youtube.com/embed/34auqhuaVMs"
+    }
+  ]
 };

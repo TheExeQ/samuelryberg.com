@@ -1,6 +1,7 @@
 export interface Meta {
   title: string;
   author: string;
+  email: string;
   description: string;
   keywords: Array<string>;
   accounts: {

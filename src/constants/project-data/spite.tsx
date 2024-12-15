@@ -21,4 +21,18 @@ export const Spite: PortfolioProjectProps = {
     </p>
   ),
   trailerUrl: "https://www.youtube.com/embed/g8_7V2Aum3k",
+  sections: [
+    {
+      description: "Player Navigation",
+      mediaSrc: "https://www.youtube.com/embed/xWkqRO_yUD0"
+    },
+    {
+      description: "Enemy Navigation",
+      mediaSrc: "https://www.youtube.com/embed/Uy6N9_Vh-Qk"
+    },
+    {
+      description: "NavMesh Tool",
+      mediaSrc: "https://www.youtube.com/embed/P-GT45HNbBY"
+    }
+  ]
 };

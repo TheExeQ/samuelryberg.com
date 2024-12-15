@@ -18,5 +18,5 @@ export const Warriors: PortfolioProjectProps = {
       width="100%"
       height="200"
     />
-  ),
+  )
 };

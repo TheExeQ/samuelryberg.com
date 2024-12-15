@@ -13,9 +13,12 @@ export interface ProjectsProps {
   projects: Project[];
 }
 
+export interface ProjectCarouselProps {
+  tabs: ProjectSection[];
+}
+
 export interface ProjectSection {
-  title: string;
-  content: JSX.Element;
+  description: string;
   mediaSrc: string;
 }
 
@@ -25,5 +28,4 @@ export interface PortfolioProjectProps {
   trailerUrl: string;
   additional?: JSX.Element;
   sections?: ProjectSection[];
-  images?: StaticImageData[];
 }

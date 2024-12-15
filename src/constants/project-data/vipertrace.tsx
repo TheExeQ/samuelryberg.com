@@ -33,4 +33,18 @@ export const Vipertrace: PortfolioProjectProps = {
       height="200"
     />
   ),
+  sections: [
+    {
+      description: "Recast/Detour Navigation",
+      mediaSrc: "https://www.youtube.com/embed/OVYgWwEUw1o"
+    },
+    {
+      description: "Weapon System",
+      mediaSrc: "https://www.youtube.com/embed/OuYq4GHIHKY"
+    },
+    {
+      description: "Mystery Box",
+      mediaSrc: "https://www.youtube.com/embed/LGPHe8XiDEU"
+    }
+  ]
 };

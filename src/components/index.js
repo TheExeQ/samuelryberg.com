@@ -1,7 +1,8 @@
 import { FloatingNav } from "./layout/floatingNav";
 import { Footer } from "./layout/footer";
 import { ContactForm } from "./contactForm";
-import { ProjectView } from "./project-view";
-import { PortfolioProject } from "./project";
+import { PortfolioProject } from "./project/project";
+import { ProjectView } from "./project/project-view";
+import { ProjectCarousel } from "./project/projectCarousel";
 
-export { FloatingNav, Footer, ContactForm, ProjectView, PortfolioProject };
+export { FloatingNav, Footer, ContactForm, ProjectView, PortfolioProject, ProjectCarousel };
