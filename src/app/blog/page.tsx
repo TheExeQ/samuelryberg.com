@@ -1,8 +1,7 @@
 import React, { FC } from "react";
 
-
 const Blog: FC = () => {
-  return (<div/>);
+  return <div />;
 };
 
 export default Blog;

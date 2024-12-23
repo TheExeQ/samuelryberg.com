@@ -5,4 +5,11 @@ import { PortfolioProject } from "./project/project";
 import { ProjectView } from "./project/project-view";
 import { ProjectCarousel } from "./project/projectCarousel";
 
-export { FloatingNav, Footer, ContactForm, ProjectView, PortfolioProject, ProjectCarousel };
+export {
+  FloatingNav,
+  Footer,
+  ContactForm,
+  ProjectView,
+  PortfolioProject,
+  ProjectCarousel,
+};
