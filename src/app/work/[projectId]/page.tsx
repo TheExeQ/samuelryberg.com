@@ -3,9 +3,11 @@ import React, { FC } from "react";
 import { PortfolioProject } from "@/components";
 import { projectsData } from "@/constants/projects";
 
-const ProjectSlug: FC<{ params: { projectId: string } }> = async (props) => {
-  const params = await props.params;
-  const projectData = projectsData[params.projectId];
+const ProjectSlug: FC<{ params: Promise<{ projectId: string }> }> = async ({
+  params,
+}) => {
+  const { projectId } = await params;
+  const projectData = projectsData[projectId];
 
   if (!projectData) {
     return <></>;
