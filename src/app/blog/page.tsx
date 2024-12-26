@@ -8,23 +8,35 @@ const Blog: FC = () => {
   const posts = [
     {
       slug: "about",
-      title: "About Page",
+      title: "Why do we use it?",
       publishedAt: "2024-12-23",
-      summary: "Small little summary of the example blog post.",
+      summary: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    },
+    {
+      slug: "about2",
+      title: "Where does it come from?",
+      publishedAt: "2024-12-25",
+      summary: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC",
+    },
+    {
+      slug: "about3",
+      title: "Where can I get some?",
+      publishedAt: "2024-12-26",
+      summary: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum",
     },
   ];
 
   return (
-    <div className="mx-auto max-w-[800px]">
+    <div className="px-8 mx-auto max-w-[800px]">
       <div className="mb-16 mt-32 flex flex-col items-start justify-center">
-        <h1>Blog</h1>
-        <p className="mb-6">
+        <h2 className="mb-4 text-3xl font-bold">Blog</h2>
+        <p className="mb-6 text-lg text-muted-foreground">
           {" "}
           A blog about technology, programming, and various intriguing topics.
           Here I share my experiences, projects and opinions.
         </p>
 
-        <h2>All Posts</h2>
+        <h2 className="text-md font-bold">All Posts</h2>
         {!posts.length && <p className="mb-4 text-red-400">No posts found!</p>}
         <ol className="relative mt-4 border-l border-neutral-200 dark:border-neutral-800">
           {posts.map((post, index) => (
