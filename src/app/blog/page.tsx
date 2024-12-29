@@ -2,32 +2,11 @@ import React, { FC } from "react";
 import Link from "next/link";
 import { Calendar } from "lucide-react";
 
+import { getBlogPosts } from "@/lib/blog";
 import { parseISO } from "@/lib/utils";
 
 const Blog: FC = () => {
-  const posts = [
-    {
-      slug: "test",
-      title: "Why do we use it?",
-      publishedAt: "2024-12-23",
-      summary:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    },
-    {
-      slug: "test2",
-      title: "Where does it come from?",
-      publishedAt: "2024-12-25",
-      summary:
-        "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC",
-    },
-    {
-      slug: "test3",
-      title: "Where can I get some?",
-      publishedAt: "2024-12-26",
-      summary:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum",
-    },
-  ];
+  let blogPosts = getBlogPosts();
 
   return (
     <div className="mx-auto max-w-[800px] px-8">
@@ -40,9 +19,11 @@ const Blog: FC = () => {
         </p>
 
         <h2 className="text-md font-bold">All Posts</h2>
-        {!posts.length && <p className="mb-4 text-red-400">No posts found!</p>}
+        {!blogPosts.length && (
+          <p className="mb-4 text-red-400">No posts found!</p>
+        )}
         <ol className="relative mt-4 border-l border-neutral-200 dark:border-neutral-800">
-          {posts.map((post, index) => (
+          {blogPosts.map((post, index) => (
             <Link
               href={`/blog/${post.slug}`}
               className="w-full"
@@ -54,7 +35,7 @@ const Blog: FC = () => {
                 </span>
                 <header>
                   <h3 className="mb-1 flex items-center text-lg font-bold text-neutral-900 dark:text-white">
-                    {post.title}{" "}
+                    {post.metadata.title}{" "}
                     {index === 0 && (
                       <span className="ml-3 mr-2 hidden rounded bg-black/10 py-0.5 pl-1.5 pr-2.5 text-sm font-medium dark:bg-white/10 sm:block">
                         🔥 Latest
@@ -63,13 +44,13 @@ const Blog: FC = () => {
                   </h3>
                   <time
                     className="mb-2 block text-sm font-normal leading-none text-neutral-500 dark:text-neutral-500"
-                    dateTime={new Date(post.publishedAt).toUTCString()}
+                    dateTime={new Date(post.metadata.publishedAt).toUTCString()}
                   >
-                    {parseISO(post.publishedAt)}
+                    {parseISO(post.metadata.publishedAt)}
                   </time>
                 </header>
                 <p className="mb-2 text-base font-normal text-neutral-700 dark:text-neutral-300">
-                  {post.summary}
+                  {post.metadata.summary}
                 </p>
                 <p className="inline-flex text-sm font-bold text-blue-500">
                   Read more

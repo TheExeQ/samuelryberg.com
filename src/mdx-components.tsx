@@ -11,7 +11,7 @@ declare global {
   type MDXProvidedComponents = typeof components;
 }
 
-const components = {
+export const components = {
   h1: (props: HeadingProps) => (
     <h1 className="mb-0 pt-12 font-medium text-foreground fade-in" {...props} />
   ),
