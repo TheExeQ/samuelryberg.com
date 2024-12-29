@@ -13,5 +13,5 @@ export {
   ProjectView,
   PortfolioProject,
   ProjectCarousel,
-  BlogPost
+  BlogPost,
 };

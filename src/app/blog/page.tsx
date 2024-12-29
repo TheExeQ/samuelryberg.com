@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Link from "next/link";
-import { Calendar } from 'lucide-react';
+import { Calendar } from "lucide-react";
 
 import { parseISO } from "@/lib/utils";
 
@@ -10,24 +10,27 @@ const Blog: FC = () => {
       slug: "test",
       title: "Why do we use it?",
       publishedAt: "2024-12-23",
-      summary: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      summary:
+        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     },
     {
       slug: "test2",
       title: "Where does it come from?",
       publishedAt: "2024-12-25",
-      summary: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC",
+      summary:
+        "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC",
     },
     {
       slug: "test3",
       title: "Where can I get some?",
       publishedAt: "2024-12-26",
-      summary: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum",
+      summary:
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum",
     },
   ];
 
   return (
-    <div className="px-8 mx-auto max-w-[800px]">
+    <div className="mx-auto max-w-[800px] px-8">
       <div className="mb-16 mt-32 flex flex-col items-start justify-center">
         <h2 className="mb-4 text-3xl font-bold">Blog</h2>
         <p className="mb-6 text-lg text-muted-foreground">
