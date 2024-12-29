@@ -7,19 +7,19 @@ import { parseISO } from "@/lib/utils";
 const Blog: FC = () => {
   const posts = [
     {
-      slug: "about",
+      slug: "test",
       title: "Why do we use it?",
       publishedAt: "2024-12-23",
       summary: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     },
     {
-      slug: "about2",
+      slug: "test2",
       title: "Where does it come from?",
       publishedAt: "2024-12-25",
       summary: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC",
     },
     {
-      slug: "about3",
+      slug: "test3",
       title: "Where can I get some?",
       publishedAt: "2024-12-26",
       summary: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum",

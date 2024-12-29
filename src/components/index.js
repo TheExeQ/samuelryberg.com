@@ -4,6 +4,7 @@ import { ContactForm } from "./contactForm";
 import { PortfolioProject } from "./project/project";
 import { ProjectView } from "./project/project-view";
 import { ProjectCarousel } from "./project/projectCarousel";
+import { BlogPost } from "./blogPost";
 
 export {
   FloatingNav,
@@ -12,4 +13,5 @@ export {
   ProjectView,
   PortfolioProject,
   ProjectCarousel,
+  BlogPost
 };
