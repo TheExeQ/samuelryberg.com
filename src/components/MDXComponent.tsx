@@ -1,8 +1,11 @@
 import React from "react";
-import { MDXRemote, type MDXRemoteProps } from "next-mdx-remote/rsc";
-
 import Link from 'next/link'
 import Image from 'next/image'
+
+import { MDXRemote, type MDXRemoteProps } from "next-mdx-remote/rsc";
+import rehypeHighlight from "rehype-highlight";
+
+import "@/styles/highlight-js/atom-one-dark.css"
 
 function CustomLink(props) {
   let href = props.href
@@ -23,7 +26,7 @@ function CustomLink(props) {
 }
 
 function RoundedImage(props) {
-  return <Image alt={props.alt} className="rounded-lg" {...props} />
+  return <Image alt={props.alt} className="px-auto rounded-lg" {...props} />
 }
 
 function slugify(str) {
@@ -81,6 +84,13 @@ let components = {
   a: CustomLink,
 }
 
+const options = {
+  mdxOptions: {
+    remarkPlugins: [],
+    rehypePlugins: [rehypeHighlight],
+  }
+}
+
 export function MDXComponent(props: MDXRemoteProps) {
-  return <MDXRemote {...props} components={{ ...components }} />;
+  return <MDXRemote {...props} components={{ ...components }} options={options} />;
 }
