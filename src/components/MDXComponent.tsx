@@ -1,32 +1,32 @@
 import React from "react";
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from "next/link";
+import Image from "next/image";
 
 import { MDXRemote, type MDXRemoteProps } from "next-mdx-remote/rsc";
 import rehypeHighlight from "rehype-highlight";
 
-import "@/styles/highlight-js/atom-one-dark.css"
+import "@/styles/highlight-js/atom-one-dark.css";
 
 function CustomLink(props) {
-  let href = props.href
+  let href = props.href;
 
-  if (href.startsWith('/')) {
+  if (href.startsWith("/")) {
     return (
       <Link href={href} {...props}>
         {props.children}
       </Link>
-    )
+    );
   }
 
-  if (href.startsWith('#')) {
-    return <a {...props} />
+  if (href.startsWith("#")) {
+    return <a {...props} />;
   }
 
-  return <a target="_blank" rel="noopener noreferrer" {...props} />
+  return <a target="_blank" rel="noopener noreferrer" {...props} />;
 }
 
 function RoundedImage(props) {
-  return <Image alt={props.alt} className="px-auto rounded-lg" {...props} />
+  return <Image alt={props.alt} className="px-auto rounded-lg" {...props} />;
 }
 
 function slugify(str) {
@@ -34,40 +34,40 @@ function slugify(str) {
     .toString()
     .toLowerCase()
     .trim()
-    .replace(/\s+/g, '-')
-    .replace(/&/g, '-and-')
-    .replace(/[^\w\-]+/g, '')
-    .replace(/\-\-+/g, '-')
+    .replace(/\s+/g, "-")
+    .replace(/&/g, "-and-")
+    .replace(/[^\w\-]+/g, "")
+    .replace(/\-\-+/g, "-");
 }
 
 function createHeading(level: number) {
   const Heading = ({ children }) => {
-    let slug = slugify(children)
-    let className = 'font-medium text-foreground';
+    let slug = slugify(children);
+    let className = "font-medium text-foreground";
 
     if (level === 1) {
-      className += ' mb-0 pt-12 fade-in';
+      className += " mb-0 pt-12 fade-in";
     } else {
-      className += ' mb-3 mt-8';
+      className += " mb-3 mt-8";
     }
-    
+
     return React.createElement(
       `h${level}`,
       { id: slug, className },
       [
-        React.createElement('a', {
+        React.createElement("a", {
           href: `#${slug}`,
           key: `link-${slug}`,
-          className: 'anchor',
+          className: "anchor",
         }),
       ],
       children
-    )
-  }
+    );
+  };
 
-  Heading.displayName = `Heading${level}`
+  Heading.displayName = `Heading${level}`;
 
-  return Heading
+  return Heading;
 }
 
 function createParagraph(props) {
@@ -82,15 +82,19 @@ let components = {
   p: createParagraph,
   Image: RoundedImage,
   a: CustomLink,
-}
+};
 
 const options = {
   mdxOptions: {
     remarkPlugins: [],
     rehypePlugins: [rehypeHighlight],
-  }
-}
+  },
+};
 
 export function MDXComponent(props: MDXRemoteProps) {
-  return <MDXRemote {...props} components={{ ...components }} options={options} />;
+  return (
+    <article className="prose prose-invert">
+      <MDXRemote {...props} components={{ ...components }} options={options} />
+    </article>
+  );
 }
