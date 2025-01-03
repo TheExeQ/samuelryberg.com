@@ -11,7 +11,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function Blog({ params }: { params: any }) {
+export default async function Blog({ params }) {
   const { slug } = await params;
   let post = getBlogPosts().find((post) => post.slug === slug);
 
