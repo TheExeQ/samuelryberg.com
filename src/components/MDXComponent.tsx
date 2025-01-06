@@ -1,32 +1,34 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 import { MDXRemote, type MDXRemoteProps } from "next-mdx-remote/rsc";
 import rehypeHighlight from "rehype-highlight";
 
 import "@/styles/highlight-js/atom-one-dark.css";
 
-function CustomLink(props) {
-  let href = props.href;
+function createLink(props) {
+  const href = props.href;
+  const className = "text-blue-500"; 
 
   if (href.startsWith("/")) {
     return (
-      <Link href={href} {...props}>
+      <Link className={className} href={href} {...props}>
         {props.children}
       </Link>
     );
   }
 
   if (href.startsWith("#")) {
-    return <a {...props} />;
+    return <a className={className} {...props} />;
   }
 
-  return <a target="_blank" rel="noopener noreferrer" {...props} />;
+  return <a className={className} target="_blank" rel="noopener noreferrer" {...props} />;
 }
 
-function RoundedImage(props) {
-  return <Image alt={props.alt} className="px-auto rounded-lg" {...props} />;
+function createImage(props) {
+  return (
+      <img alt={props.alt} className="mx-auto" {...props} />
+  );
 }
 
 function slugify(str) {
@@ -80,8 +82,8 @@ let components = {
   h3: createHeading(3),
   h4: createHeading(4),
   p: createParagraph,
-  Image: RoundedImage,
-  a: CustomLink,
+  img: createImage,
+  a: createLink,
 };
 
 const options = {
