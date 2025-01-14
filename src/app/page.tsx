@@ -26,8 +26,8 @@ const Home: FC = () => (
             Welcome to My Portfolio
           </h1>
           <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl lg:mx-0">
-            I&apos;m a game developer specializing in backend systems.
-            Let&apos;s build something great together!
+            I&apos;m a Software Engineer specializing in DevOps and backend
+            engineering. Let&apos;s build something amazing!
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <Button size="lg" asChild>
