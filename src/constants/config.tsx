@@ -175,8 +175,8 @@ export const nav: Array<NavLink> = [
     link: "/",
   },
   {
-    name: "Work",
-    link: "/work",
+    name: "Projects",
+    link: "/projects",
   },
   // {
   //   title: "Music",

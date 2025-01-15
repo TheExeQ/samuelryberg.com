@@ -26,7 +26,7 @@ export const ProjectView: FC<ProjectsProps> = ({ title, projects }) => {
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <Card key={project.id} className="overflow-hidden">
-            <Link href={`/work/${project.href}`}>
+            <Link href={`/projects/${project.href}`}>
               <div className="relative pb-[56.25%]">
                 <Image
                   src={project.image}
