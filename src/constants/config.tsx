@@ -182,10 +182,10 @@ export const nav: Array<NavLink> = [
   //   title: "Music",
   //   href: "/music",
   // },
-  {
-    name: "Blog",
-    link: "/blog",
-  },
+  // {
+  //  name: "Blog",
+  //  link: "/blog",
+  // },
   {
     name: "About",
     link: "/about",
