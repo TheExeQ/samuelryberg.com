@@ -15,7 +15,6 @@ const Home: FC = () => (
       fill="white"
     />
     <div className="absolute inset-0 -z-10 flex h-auto w-full items-center justify-center bg-grid-black/[0.05] dark:bg-grid-white/[0.05]" />
-    <div className="pointer-events-none absolute inset-0 hidden items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black md:flex" />
 
     {/* Hero Section */}
     <Card className="container mx-auto max-w-6xl border-none bg-transparent pt-20 shadow-none sm:pt-0">
@@ -26,8 +25,8 @@ const Home: FC = () => (
             Welcome to My Portfolio
           </h1>
           <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl lg:mx-0">
-            I&apos;m a game developer specializing in backend systems.
-            Let&apos;s build something great together!
+            I&apos;m a Software Engineer specializing in DevOps and backend
+            engineering. Let&apos;s build something amazing!
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <Button size="lg" asChild>
