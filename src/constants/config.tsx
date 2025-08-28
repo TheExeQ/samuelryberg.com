@@ -42,7 +42,7 @@ export const header = {
 
 export const experiences: Array<Experience> = [
   {
-    year: "Aug 2023 - Dec 2024",
+    year: "Aug 2023 - Mar 2025",
     title: "Associate Programmer",
     company: "Flashbulb Games",
     description: (
