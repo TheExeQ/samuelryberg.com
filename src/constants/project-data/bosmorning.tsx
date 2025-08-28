@@ -20,19 +20,19 @@ export const BosMorning: PortfolioProjectProps = {
   sections: [
     {
       description: "Rabbit Enemy",
-      mediaSrc: "https://www.youtube.com/embed/lDRKc5rsBpk"
+      mediaSrc: "https://www.youtube.com/embed/lDRKc5rsBpk",
     },
     {
       description: "Hedgehog Enemy",
-      mediaSrc: "https://www.youtube.com/embed/z9oXHQRuVUw"
+      mediaSrc: "https://www.youtube.com/embed/z9oXHQRuVUw",
     },
     {
       description: "Bird Enemy",
-      mediaSrc: "https://www.youtube.com/embed/zvYMHCj5zBE"
+      mediaSrc: "https://www.youtube.com/embed/zvYMHCj5zBE",
     },
     {
       description: "Frog Enemy",
-      mediaSrc: "https://www.youtube.com/embed/y-tYkYYEvYQ"
-    }
-  ]
+      mediaSrc: "https://www.youtube.com/embed/y-tYkYYEvYQ",
+    },
+  ],
 };

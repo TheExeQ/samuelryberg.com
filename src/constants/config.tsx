@@ -175,16 +175,16 @@ export const nav: Array<NavLink> = [
     link: "/",
   },
   {
-    name: "Work",
-    link: "/work",
+    name: "Projects",
+    link: "/projects",
   },
   // {
   //   title: "Music",
   //   href: "/music",
   // },
   // {
-  //   name: "Blog",
-  //   link: "/blog",
+  //  name: "Blog",
+  //  link: "/blog",
   // },
   {
     name: "About",

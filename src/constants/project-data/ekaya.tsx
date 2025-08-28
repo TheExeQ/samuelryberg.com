@@ -26,15 +26,15 @@ export const Ekaya: PortfolioProjectProps = {
   sections: [
     {
       description: "Telekinesis Ability",
-      mediaSrc: "https://www.youtube.com/embed/VTuNrZoYbMs"
+      mediaSrc: "https://www.youtube.com/embed/VTuNrZoYbMs",
     },
     {
       description: "Player Movement",
-      mediaSrc: "https://www.youtube.com/embed/AoLDdm9bU3g"
+      mediaSrc: "https://www.youtube.com/embed/AoLDdm9bU3g",
     },
     {
       description: "C# Scripting",
-      mediaSrc: "https://www.youtube.com/embed/lgEEtbddCa4"
-    }
-  ]
+      mediaSrc: "https://www.youtube.com/embed/lgEEtbddCa4",
+    },
+  ],
 };

@@ -19,11 +19,11 @@ export const BardKnight: PortfolioProjectProps = {
   sections: [
     {
       description: "Player Movement",
-      mediaSrc: "https://www.youtube.com/embed/tHaz97BsMV4"
+      mediaSrc: "https://www.youtube.com/embed/tHaz97BsMV4",
     },
     {
       description: "Moving Platforms",
-      mediaSrc: "https://www.youtube.com/embed/34auqhuaVMs"
-    }
-  ]
+      mediaSrc: "https://www.youtube.com/embed/34auqhuaVMs",
+    },
+  ],
 };

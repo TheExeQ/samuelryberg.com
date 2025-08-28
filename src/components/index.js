@@ -4,5 +4,14 @@ import { ContactForm } from "./contactForm";
 import { PortfolioProject } from "./project/project";
 import { ProjectView } from "./project/project-view";
 import { ProjectCarousel } from "./project/projectCarousel";
+import { MDXComponent } from "./MDXComponent";
 
-export { FloatingNav, Footer, ContactForm, ProjectView, PortfolioProject, ProjectCarousel };
+export {
+  FloatingNav,
+  Footer,
+  ContactForm,
+  ProjectView,
+  PortfolioProject,
+  ProjectCarousel,
+  MDXComponent,
+};

@@ -23,15 +23,15 @@ export const CuteEmUp: PortfolioProjectProps = {
   sections: [
     {
       description: "Boss (Phase One)",
-      mediaSrc: "https://www.youtube.com/embed/JjI7lcCLCxs"
+      mediaSrc: "https://www.youtube.com/embed/JjI7lcCLCxs",
     },
     {
       description: "Shink Ability & Boss (Phase Two)",
-      mediaSrc: "https://www.youtube.com/embed/HAkhXtlDyXA"
+      mediaSrc: "https://www.youtube.com/embed/HAkhXtlDyXA",
     },
     {
       description: "Bullet Hell",
-      mediaSrc: "https://www.youtube.com/embed/ZKxCr1c5rSw"
-    }
-  ]
+      mediaSrc: "https://www.youtube.com/embed/ZKxCr1c5rSw",
+    },
+  ],
 };

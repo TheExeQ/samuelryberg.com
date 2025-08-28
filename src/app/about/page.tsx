@@ -58,10 +58,10 @@ const About: FC = () => {
           <div className="space-y-6">
             {experiences.map((exp, index) => (
               <Card key={index} className="p-6 text-left">
-                <div className="text-lg font-bold">{exp.year}</div>
-                <div className="font-semibold">{exp.title}</div>
+                <div className="text-lg font-bold">{exp.title}</div>
+                <div className="font-semibold text-muted-foreground">{exp.company}</div>
                 <div className="mb-2 text-sm text-muted-foreground">
-                  {exp.company}
+                  {exp.year}
                 </div>
                 <div>{exp.description}</div>
               </Card>

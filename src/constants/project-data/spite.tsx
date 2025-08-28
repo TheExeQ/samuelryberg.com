@@ -24,15 +24,15 @@ export const Spite: PortfolioProjectProps = {
   sections: [
     {
       description: "Player Navigation",
-      mediaSrc: "https://www.youtube.com/embed/xWkqRO_yUD0"
+      mediaSrc: "https://www.youtube.com/embed/xWkqRO_yUD0",
     },
     {
       description: "Enemy Navigation",
-      mediaSrc: "https://www.youtube.com/embed/Uy6N9_Vh-Qk"
+      mediaSrc: "https://www.youtube.com/embed/Uy6N9_Vh-Qk",
     },
     {
       description: "NavMesh Tool",
-      mediaSrc: "https://www.youtube.com/embed/P-GT45HNbBY"
-    }
-  ]
+      mediaSrc: "https://www.youtube.com/embed/P-GT45HNbBY",
+    },
+  ],
 };
