@@ -1,7 +1,6 @@
-import { FC, type JSX } from "react";
+import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -9,14 +8,13 @@ import {
   TooltipTrigger,
   TooltipContent,
 } from "@/components/ui/tooltip";
-
 import { ProjectsProps } from "@/types";
-
 import { SiUnity, SiUnrealengine } from "react-icons/si";
+import type { IconType } from "react-icons";
 
-const technologyIcons: { [key: string]: JSX.Element } = {
-  "Unity Engine": <SiUnity className="h-4 w-4" />,
-  "Unreal Engine": <SiUnrealengine className="h-4 w-4" />,
+const technologyIcons: Record<string, IconType> = {
+  "Unity Engine": SiUnity,
+  "Unreal Engine": SiUnrealengine,
 };
 
 export const ProjectView: FC<ProjectsProps> = ({ title, projects }) => {
@@ -42,21 +40,28 @@ export const ProjectView: FC<ProjectsProps> = ({ title, projects }) => {
                     {project.title}
                   </h2>
                   <div className="flex space-x-2">
-                    {project.technologies.map((tech) => (
-                      <Tooltip key={tech}>
-                        <TooltipTrigger asChild>
-                          <Badge
-                            variant="secondary"
-                            className="rounded-full p-1"
-                          >
-                            {technologyIcons[tech]}
-                          </Badge>
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>{tech}</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    ))}
+                    {project.technologies.map((tech, i) => {
+                      const Icon = technologyIcons[tech];
+                      return (
+                        <Tooltip key={`${project.id}-${tech}-${i}`}>
+                          <TooltipTrigger asChild>
+                            <Badge
+                              variant="secondary"
+                              className="rounded-full p-1"
+                            >
+                              {Icon ? (
+                                <Icon className="h-4 w-4" />
+                              ) : (
+                                <span className="text-xs">{tech}</span>
+                              )}
+                            </Badge>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>{tech}</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
