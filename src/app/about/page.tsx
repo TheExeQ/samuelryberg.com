@@ -28,7 +28,7 @@ const About: FC = () => {
 
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <Button size="lg" asChild>
-              <Link href="/work">View Work</Link>
+              <Link href="/projects">View Work</Link>
             </Button>
             <Button size="lg" variant="secondary" asChild>
               <Link href="/contact">Contact Me</Link>
@@ -59,7 +59,9 @@ const About: FC = () => {
             {experiences.map((exp, index) => (
               <Card key={index} className="p-6 text-left">
                 <div className="text-lg font-bold">{exp.title}</div>
-                <div className="font-semibold text-muted-foreground">{exp.company}</div>
+                <div className="font-semibold text-muted-foreground">
+                  {exp.company}
+                </div>
                 <div className="mb-2 text-sm text-muted-foreground">
                   {exp.year}
                 </div>
