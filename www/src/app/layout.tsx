@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import { meta } from "@/config";
 
 import { Footer } from "@/components/layout/footer";
+import { Navbar } from "@/components/layout/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,6 +50,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Navbar />
           <div className="overflow-hidden">
             <div className="min-h-screen">{children}</div>
             <Footer />
