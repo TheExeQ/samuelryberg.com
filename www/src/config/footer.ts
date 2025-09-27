@@ -1,5 +1,5 @@
 import { Footer } from "@/types";
-import { meta } from "@/config/meta";
+import { meta } from "./meta";
 
 export const footer: Footer = {
   socials: [

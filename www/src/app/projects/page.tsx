@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
 import { ProjectView } from "@/components";
-import { academicProjects, professionalProjects } from "@/constants/projects";
+import { academicProjects, professionalProjects } from "@/config/projects";
 
 const Work: FC = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
 import { PortfolioProject } from "@/components";
-import { projectsData } from "@/constants/projects";
+import { projectsData } from "@/config/projects";
 import BackgroundGrid from "@/components/background-grid";
 
 const ProjectSlug: FC<{ params: Promise<{ projectId: string }> }> = async ({

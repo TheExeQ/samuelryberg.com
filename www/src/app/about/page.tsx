@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Link from "next/link";
 
-import { technologies, experiences } from "@/constants/config";
+import { technologies, experiences } from "@/config";
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
