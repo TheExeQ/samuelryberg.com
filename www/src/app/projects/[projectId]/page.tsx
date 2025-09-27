@@ -1,17 +1,21 @@
-import React, { FC } from "react";
+import { FC } from "react";
+import { notFound } from "next/navigation";
 
+import BackgroundGrid from "@/components/background-grid";
 import { PortfolioProject } from "@/components";
 import { projectsData } from "@/config/projects";
-import BackgroundGrid from "@/components/background-grid";
 
-const ProjectSlug: FC<{ params: Promise<{ projectId: string }> }> = async ({
-  params,
-}) => {
-  const { projectId } = await params;
-  const projectData = projectsData[projectId];
+type ProjectPageProps = {
+  params: {
+    projectId: string;
+  };
+};
+
+const ProjectPage: FC<ProjectPageProps> = ({ params }) => {
+  const projectData = projectsData[params.projectId];
 
   if (!projectData) {
-    return <></>;
+    notFound();
   }
 
   return (
@@ -29,4 +33,8 @@ const ProjectSlug: FC<{ params: Promise<{ projectId: string }> }> = async ({
   );
 };
 
-export default ProjectSlug;
+export const generateStaticParams = () => {
+  Object.keys(projectsData).map((projectId) => ({ projectId }));
+};
+
+export default ProjectPage;
