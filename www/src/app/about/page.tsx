@@ -13,7 +13,7 @@ const About: FC = () => {
       <BackgroundGrid />
 
       <section className="container mx-auto px-4 py-16 pt-32">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="relative z-10 mx-auto max-w-4xl rounded-3xl border border-border/60 bg-background/95 p-10 text-center shadow-xl backdrop-blur">
           <h2 className="mb-8 text-3xl font-bold">About Me</h2>
 
           <p className="mb-12 text-lg text-muted-foreground">
@@ -56,19 +56,39 @@ const About: FC = () => {
           </div>
 
           <h3 className="mb-6 mt-12 text-2xl font-semibold">Experience</h3>
-          <div className="space-y-6">
-            {experiences.map((exp, index) => (
-              <Card key={index} className="p-6 text-left">
-                <div className="text-lg font-bold">{exp.title}</div>
-                <div className="font-semibold text-muted-foreground">
-                  {exp.company}
+          <div className="relative">
+            <div
+              className="absolute bottom-6 left-4 top-6 w-px bg-border/60 sm:left-6"
+              aria-hidden="true"
+            />
+            <div className="space-y-6">
+              {experiences.map((exp, index) => (
+                <div key={exp.title} className="relative pl-12 sm:pl-16">
+                  {index === 0 && (
+                    <span
+                      className="absolute left-4 top-0 z-10 h-6 w-4 -translate-x-1/2 rounded-b-full bg-background/95 sm:left-6"
+                      aria-hidden="true"
+                    />
+                  )}
+                  <span
+                    className="absolute left-4 top-6 z-20 flex h-4 w-4 -translate-x-1/2 items-center justify-center rounded-full border-2 border-primary bg-background sm:left-6"
+                    aria-hidden="true"
+                  >
+                    <span className="h-2 w-2 rounded-full bg-primary" />
+                  </span>
+                  <Card className="!gap-0 p-5 text-left">
+                    <div className="text-sm font-medium uppercase tracking-wide text-primary">
+                      {exp.year}
+                    </div>
+                    <div className="mt-1 text-lg font-bold">{exp.title}</div>
+                    <div className="text-sm font-semibold text-muted-foreground">
+                      {exp.company}
+                    </div>
+                    <div className="mt-2">{exp.description}</div>
+                  </Card>
                 </div>
-                <div className="mb-2 text-sm text-muted-foreground">
-                  {exp.year}
-                </div>
-                <div>{exp.description}</div>
-              </Card>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>

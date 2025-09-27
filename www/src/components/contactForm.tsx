@@ -58,7 +58,7 @@ export function ContactForm() {
         <form suppressHydrationWarning>
           <div className="grid w-full items-center gap-4">
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="name">
+              <Label className="gap-0" htmlFor="name">
                 Name<span className="text-red-500">*</span>
               </Label>
               <Input
@@ -68,7 +68,7 @@ export function ContactForm() {
               />
             </div>
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="mail">
+              <Label className="gap-0" htmlFor="mail">
                 Email<span className="text-red-500">*</span>
               </Label>
               <Input
@@ -78,7 +78,7 @@ export function ContactForm() {
               />
             </div>
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="message">
+              <Label className="gap-0" htmlFor="message">
                 Message<span className="text-red-500">*</span>
               </Label>
               <Textarea
