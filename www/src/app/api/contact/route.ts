@@ -33,9 +33,16 @@ export async function POST(request: Request) {
     });
 
     if (!response.ok) {
+      const errorBody = await response.text().catch(() => undefined);
+      console.error("Contact form webhook returned non-OK response", {
+        status: response.status,
+        statusText: response.statusText,
+        body: errorBody,
+      });
       return new Response("ERROR", { status: 400 });
     }
   } catch (error) {
+    console.error("Contact form webhook request failed", error);
     return new Response("ERROR", { status: 500 });
   }
 
