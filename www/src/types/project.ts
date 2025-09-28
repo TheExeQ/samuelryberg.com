@@ -8,6 +8,10 @@ export interface Project {
   title: string;
   image: StaticImageData;
   technologies: string[];
+  summary?: string;
+  tags?: string[];
+  categories?: string[];
+  featured?: boolean;
 }
 
 export interface ProjectsProps {
