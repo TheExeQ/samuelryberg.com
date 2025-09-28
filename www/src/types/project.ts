@@ -3,7 +3,6 @@ import { StaticImageData } from "next/image";
 import type { JSX } from "react";
 
 export interface Project {
-  id: number;
   href: string;
   title: string;
   image: StaticImageData;

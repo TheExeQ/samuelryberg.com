@@ -40,7 +40,6 @@ export const categoryOrder = ["Games", "Web", "Mobile"] as const;
 
 export const projects: Project[] = [
   {
-    id: 1,
     href: "warriors",
     title: "Warriors",
     image: WarriorsImage,
@@ -52,7 +51,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 2,
     href: "rubber-bandits",
     title: "Rubber Bandits",
     image: RubberBanditsImage,
@@ -64,7 +62,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 3,
     href: "vipertrace",
     title: "Vipertrace",
     image: VipertraceImage,
@@ -76,7 +73,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 4,
     href: "ekaya-pebbles",
     title: "Ekaya & Pebbles",
     image: EkayaImage,
@@ -87,7 +83,6 @@ export const projects: Project[] = [
     category: "Games",
   },
   {
-    id: 5,
     href: "spite-the-yellow-plague",
     title: "Spite: The Yellow Plague",
     image: SpiteImage,
@@ -98,7 +93,6 @@ export const projects: Project[] = [
     category: "Games",
   },
   {
-    id: 6,
     href: "bos-morning",
     title: "Bo's Morning",
     image: BoImage,
@@ -109,7 +103,6 @@ export const projects: Project[] = [
     category: "Games",
   },
   {
-    id: 7,
     href: "bard-knight",
     title: "Bard Knight",
     image: BardKnightImage,
@@ -120,7 +113,6 @@ export const projects: Project[] = [
     category: "Games",
   },
   {
-    id: 8,
     href: "cute-em-up",
     title: "Cute 'em up",
     image: CuteEmUpImage,
@@ -131,7 +123,6 @@ export const projects: Project[] = [
     category: "Games",
   },
   {
-    id: 9,
     href: "hungry-house",
     title: "Hungry House",
     image: HungryHouseImage,
@@ -143,7 +134,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 10,
     href: "potion-run",
     title: "Potion Run",
     image: PotionRunImage,
