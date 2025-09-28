@@ -1,7 +1,7 @@
-import { StaticImageData } from "next/image";
+import type { IconType } from "react-icons";
 
 export interface Technology {
   name: string;
   href?: string;
-  logo?: StaticImageData;
+  icon?: IconType;
 }

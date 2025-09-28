@@ -38,21 +38,35 @@ const About: FC = () => {
 
           <h3 className="mb-6 mt-12 text-2xl font-semibold">Skills</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {technologies.map((tech, index) => (
-              <Button key={index} variant="secondary" asChild>
-                {tech.href ? (
-                  <Link
-                    href={tech.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {tech.name}
-                  </Link>
-                ) : (
-                  <span>{tech.name}</span>
-                )}
-              </Button>
-            ))}
+            {technologies.map((tech, index) => {
+              const Icon = tech.icon;
+
+              return (
+                <Button
+                  key={index}
+                  variant="outline"
+                  className="border-primary text-primary/90 bg-primary/5 transition-all duration-200 hover:border-primary/60 hover:bg-primary/10 hover:text-primary hover:shadow-md"
+                  asChild
+                >
+                  {tech.href ? (
+                    <Link
+                      href={tech.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      {Icon && <Icon className="h-4 w-4" aria-hidden="true" />}
+                      <span>{tech.name}</span>
+                    </Link>
+                  ) : (
+                    <span className="flex items-center gap-2">
+                      {Icon && <Icon className="h-4 w-4" aria-hidden="true" />}
+                      <span>{tech.name}</span>
+                    </span>
+                  )}
+                </Button>
+              );
+            })}
           </div>
 
           <h3 className="mb-6 mt-12 text-2xl font-semibold">Experience</h3>
