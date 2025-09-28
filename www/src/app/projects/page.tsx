@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { ProjectView } from "@/components";
-import { academicProjects, professionalProjects } from "@/config/projects";
+import { categoryOrder, projects as projectList } from "@/config/projects";
 import type { Project } from "@/types";
 import {
   Carousel,
@@ -21,111 +21,17 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
-type ExtendedProject = Project & {
-  summary: string;
-  tags: string[];
-  categories: string[];
-  featured?: boolean;
-};
+type ExtendedProject = Project &
+  Required<Pick<Project, "summary" | "tags" | "category">>;
 
-const projectMetadata: Record<
-  string,
-  {
-    summary: string;
-    tags: string[];
-    categories: string[];
-    featured?: boolean;
-  }
-> = {
-  warriors: {
-    summary:
-      "Shipped a fast-paced online arena brawler for Steam with bespoke combat systems and live multiplayer tooling.",
-    tags: ["Multiplayer", "Unity", "Steam", "Professional"],
-    categories: ["Games"],
-    featured: true,
-  },
-  "rubber-bandits": {
-    summary:
-      "Delivered the physics-driven chaos behind Rubber Bandits, keeping party play polished across console and PC.",
-    tags: ["Multiplayer", "Unity", "Professional"],
-    categories: ["Games"],
-    featured: true,
-  },
-  vipertrace: {
-    summary:
-      "Led AI and navigation for a sci-fi FPS built in our custom Volt engine during my final year at The Game Assembly.",
-    tags: ["Custom Engine", "C++", "Academic"],
-    categories: ["Games"],
-    featured: true,
-  },
-  "ekaya-pebbles": {
-    summary:
-      "Created third-person traversal and telekinetic companion systems in a bespoke engine for Ekaya & Pebbles.",
-    tags: ["Custom Engine", "C++", "Academic"],
-    categories: ["Web"],
-  },
-  "spite-the-yellow-plague": {
-    summary:
-      "Built enemy navigation and tools while co-authoring the Volt engine for a dark dungeon crawler.",
-    tags: ["Custom Engine", "C++", "Academic"],
-    categories: ["Games"],
-  },
-  "bos-morning": {
-    summary:
-      "Designed a top-down action adventure with handcrafted enemy behaviors to bring Bo's farm back to life.",
-    tags: ["C++", "Academic"],
-    categories: ["Games"],
-  },
-  "bard-knight": {
-    summary:
-      "Developed rhythm-driven platforming mechanics in collaboration with Ostra Grevie's music program.",
-    tags: ["C++", "Academic"],
-    categories: ["Games"],
-  },
-  "cute-em-up": {
-    summary:
-      "Engineered arcade shooter systems and bullet-hell encounters in our first C++ project.",
-    tags: ["C++", "Academic"],
-    categories: ["Games"],
-  },
-  "hungry-house": {
-    summary:
-      "Designed award-winning mobile puzzle loops and creature animations during an eight-week sprint.",
-    tags: ["C#", "Academic"],
-    categories: ["Mobile"],
-    featured: true,
-  },
-  "potion-run": {
-    summary:
-      "Built the endless runner foundation for Potion Run, balancing pacing, obstacles, and progression on mobile.",
-    tags: ["C#", "Academic"],
-    categories: ["Mobile"],
-  },
-};
+const projectsWithMetadata: ExtendedProject[] = projectList.filter(
+  (project): project is ExtendedProject =>
+    Boolean(project.summary && project.tags && project.category)
+);
 
-const categoryOrder = ["Games", "Web", "Mobile"];
-
-const baseProjects: Project[] = [
-  ...professionalProjects,
-  ...academicProjects,
-];
-
-const projectsWithMetadata: ExtendedProject[] = baseProjects
-  .map((project) => {
-    const meta = projectMetadata[project.href];
-
-    if (!meta) {
-      return null;
-    }
-
-    return {
-      ...project,
-      ...meta,
-    } as ExtendedProject;
-  })
-  .filter(Boolean) as ExtendedProject[];
-
-const featuredProjectsData = projectsWithMetadata.filter((project) => project.featured);
+const featuredProjectsData = projectsWithMetadata.filter(
+  (project) => project.featured
+);
 
 const tagOptionsData = Array.from(
   projectsWithMetadata.reduce((acc, project) => {
@@ -170,8 +76,8 @@ const Work: FC = () => {
     () =>
       categoryOrder.map((category) => ({
         category,
-        projects: visibleProjects.filter((project) =>
-          project.categories.includes(category)
+        projects: visibleProjects.filter(
+          (project) => project.category === category
         ),
       })),
     [visibleProjects]

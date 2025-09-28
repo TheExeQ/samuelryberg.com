@@ -36,13 +36,20 @@ export const projectsData: { [key: string]: PortfolioProjectProps } = {
   "potion-run": PotionRun,
 };
 
-export const professionalProjects: Project[] = [
+export const categoryOrder = ["Games", "Web", "Mobile"] as const;
+
+export const projects: Project[] = [
   {
     id: 1,
     href: "warriors",
     title: "Warriors",
     image: WarriorsImage,
     technologies: ["Unity Engine"],
+    summary:
+      "Shipped a fast-paced online arena brawler for Steam with bespoke combat systems and live multiplayer tooling.",
+    tags: ["Multiplayer", "Unity", "Steam", "Professional"],
+    category: "Games",
+    featured: true,
   },
   {
     id: 2,
@@ -50,64 +57,100 @@ export const professionalProjects: Project[] = [
     title: "Rubber Bandits",
     image: RubberBanditsImage,
     technologies: ["Unity Engine"],
+    summary:
+      "Delivered the physics-driven chaos behind Rubber Bandits, keeping party play polished across console and PC.",
+    tags: ["Multiplayer", "Unity", "Professional"],
+    category: "Games",
+    featured: true,
   },
-];
-
-export const academicProjects: Project[] = [
   {
-    id: 1,
+    id: 3,
     href: "vipertrace",
     title: "Vipertrace",
     image: VipertraceImage,
     technologies: [],
+    summary:
+      "Led AI and navigation for a sci-fi FPS built in our custom Volt engine during my final year at The Game Assembly.",
+    tags: ["Custom Engine", "C++", "Academic"],
+    category: "Games",
+    featured: true,
   },
   {
-    id: 2,
+    id: 4,
     href: "ekaya-pebbles",
     title: "Ekaya & Pebbles",
     image: EkayaImage,
     technologies: [],
+    summary:
+      "Created third-person traversal and telekinetic companion systems in a bespoke engine for Ekaya & Pebbles.",
+    tags: ["Custom Engine", "C++", "Academic"],
+    category: "Games",
   },
   {
-    id: 3,
+    id: 5,
     href: "spite-the-yellow-plague",
     title: "Spite: The Yellow Plague",
     image: SpiteImage,
     technologies: [],
+    summary:
+      "Built enemy navigation and tools while co-authoring the Volt engine for a dark dungeon crawler.",
+    tags: ["Custom Engine", "C++", "Academic"],
+    category: "Games",
   },
   {
-    id: 4,
+    id: 6,
     href: "bos-morning",
     title: "Bo's Morning",
     image: BoImage,
     technologies: [],
+    summary:
+      "Designed a top-down action adventure with handcrafted enemy behaviors to bring Bo's farm back to life.",
+    tags: ["C++", "Academic"],
+    category: "Games",
   },
   {
-    id: 5,
+    id: 7,
     href: "bard-knight",
     title: "Bard Knight",
     image: BardKnightImage,
     technologies: [],
+    summary:
+      "Developed rhythm-driven platforming mechanics in collaboration with Ostra Grevie's music program.",
+    tags: ["C++", "Academic"],
+    category: "Games",
   },
   {
-    id: 6,
+    id: 8,
     href: "cute-em-up",
     title: "Cute 'em up",
     image: CuteEmUpImage,
     technologies: [],
+    summary:
+      "Engineered arcade shooter systems and bullet-hell encounters in our first C++ project.",
+    tags: ["C++", "Academic"],
+    category: "Games",
   },
   {
-    id: 7,
+    id: 9,
     href: "hungry-house",
     title: "Hungry House",
     image: HungryHouseImage,
     technologies: ["Unity Engine"],
+    summary:
+      "Designed award-winning mobile puzzle loops and creature animations during an eight-week sprint.",
+    tags: ["C#", "Academic"],
+    category: "Mobile",
+    featured: true,
   },
   {
-    id: 8,
+    id: 10,
     href: "potion-run",
     title: "Potion Run",
     image: PotionRunImage,
     technologies: ["Unity Engine"],
+    summary:
+      "Built the endless runner foundation for Potion Run, balancing pacing, obstacles, and progression on mobile.",
+    tags: ["C#", "Academic"],
+    category: "Games",
   },
 ];

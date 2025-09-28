@@ -10,7 +10,7 @@ export interface Project {
   technologies: string[];
   summary?: string;
   tags?: string[];
-  categories?: string[];
+  category?: string;
   featured?: boolean;
 }
 
