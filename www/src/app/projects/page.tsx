@@ -4,6 +4,8 @@ import { type FC, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { ArrowUpRight } from "lucide-react";
+
 import { ProjectView } from "@/components";
 import { categoryOrder, projects as projectList } from "@/config/projects";
 import type { Project } from "@/types";
@@ -129,20 +131,29 @@ const Work: FC = () => {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                         <div className="absolute inset-x-0 bottom-0 flex flex-col gap-4 p-6 text-white sm:p-8">
-                          <div className="flex flex-wrap items-center justify-between gap-3">
+                          <div className="flex flex-wrap items-center gap-3 sm:justify-between">
                             <h2 className="text-2xl font-semibold sm:text-3xl">
                               {project.title}
                             </h2>
-                            <Link
-                              href={`/projects/${project.href}`}
-                              className="text-sm font-medium underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
-                            >
-                              View project
-                            </Link>
                           </div>
-                          <p className="max-w-3xl text-sm text-white/80 sm:text-base">
-                            {project.summary}
-                          </p>
+                          <div className="flex flex-wrap items-start justify-between gap-3">
+                            <p className="max-w-3xl flex-1 min-w-full text-sm text-white/80 sm:min-w-0 sm:text-base">
+                              {project.summary}
+                            </p>
+                            <Button
+                              asChild
+                              size="sm"
+                              className="shrink-0 bg-white/90 text-black shadow-lg hover:bg-white focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                            >
+                              <Link href={`/projects/${project.href}`}>
+                                View project
+                                <ArrowUpRight
+                                  className="size-4"
+                                  aria-hidden="true"
+                                />
+                              </Link>
+                            </Button>
+                          </div>
                           <div className="flex flex-wrap gap-2">
                             {project.tags.map((tag) => (
                               <Badge
