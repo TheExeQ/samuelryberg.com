@@ -1,12 +1,14 @@
 import React from "react";
 import Link from "next/link";
 
-import { technologies as technologyMap } from "@/config";
+import { technologies as technologyConfig } from "@/config";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ProjectCarousel } from "@/components";
 
-import { PortfolioProjectProps } from "@/types";
+import { PortfolioProjectProps, Technology } from "@/types";
+
+const technologyMap: Record<string, Technology> = technologyConfig;
 
 export function PortfolioProject({
   title,

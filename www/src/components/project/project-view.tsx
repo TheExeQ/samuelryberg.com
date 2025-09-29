@@ -16,8 +16,10 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { ProjectsProps } from "@/types";
+import { ProjectsProps, Technology } from "@/types";
 import { technologies } from "@/config";
+
+const technologyMap: Record<string, Technology> = technologies;
 
 export const ProjectView: FC<ProjectsProps> = ({ title, projects }) => {
   if (!projects.length) {
@@ -61,7 +63,7 @@ export const ProjectView: FC<ProjectsProps> = ({ title, projects }) => {
                       </h2>
                       <div className="flex space-x-2">
                         {project.technologies.map((tech, i) => {
-                          const techInfo = technologies[tech];
+                          const techInfo = technologyMap[tech];
                           const Icon = techInfo?.icon;
                           const label = techInfo?.name ?? tech;
                           return (

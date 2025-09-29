@@ -48,7 +48,7 @@ const About: FC = () => {
                   className="border-primary text-primary/90 bg-primary/5 transition-all duration-200 hover:border-primary/60 hover:bg-primary/10 hover:text-primary hover:shadow-md"
                   asChild
                 >
-                  {tech.href ? (
+                  {"href" in tech && tech.href ? (
                     <Link
                       href={tech.href}
                       target="_blank"
