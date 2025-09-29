@@ -46,7 +46,7 @@ export const projects: Project[] = [
     technologies: ["Unity Engine"],
     summary:
       "Shipped a fast-paced online arena brawler for Steam with bespoke combat systems and live multiplayer tooling.",
-    tags: ["Multiplayer", "Unity", "Steam", "Professional"],
+    tags: ["Multiplayer", "Unity", "C#", "Steam", "Professional"],
     category: "Games",
     featured: true,
   },
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     technologies: ["Unity Engine"],
     summary:
       "Delivered the physics-driven chaos behind Rubber Bandits, keeping party play polished across console and PC.",
-    tags: ["Multiplayer", "Unity", "Professional"],
+    tags: ["Multiplayer", "Unity", "C#", "Steam", "Professional"],
     category: "Games",
     featured: true,
   },
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     technologies: [],
     summary:
       "Led AI and navigation for a sci-fi FPS built in our custom Volt engine during my final year at The Game Assembly.",
-    tags: ["Custom Engine", "C++", "Academic"],
+    tags: ["Multiplayer", "Custom Engine", "C++", "C#", "Steam", "Academic"],
     category: "Games",
     featured: true,
   },
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     technologies: [],
     summary:
       "Created third-person traversal and telekinetic companion systems in a bespoke engine for Ekaya & Pebbles.",
-    tags: ["Custom Engine", "C++", "Academic"],
+    tags: ["Custom Engine", "C++", "C#", "Academic"],
     category: "Games",
   },
   {
@@ -109,7 +109,7 @@ export const projects: Project[] = [
     technologies: [],
     summary:
       "Developed rhythm-driven platforming mechanics in collaboration with Ostra Grevie's music program.",
-    tags: ["C++", "Academic"],
+    tags: ["Custom Engine", "C++", "Academic"],
     category: "Games",
   },
   {
@@ -119,7 +119,7 @@ export const projects: Project[] = [
     technologies: [],
     summary:
       "Engineered arcade shooter systems and bullet-hell encounters in our first C++ project.",
-    tags: ["C++", "Academic"],
+    tags: ["Custom Engine", "C++", "Academic"],
     category: "Games",
   },
   {
@@ -129,7 +129,7 @@ export const projects: Project[] = [
     technologies: ["Unity Engine"],
     summary:
       "Designed award-winning mobile puzzle loops and creature animations during an eight-week sprint.",
-    tags: ["C#", "Academic"],
+    tags: ["Unity", "C#", "Academic"],
     category: "Mobile",
     featured: true,
   },
@@ -140,7 +140,7 @@ export const projects: Project[] = [
     technologies: ["Unity Engine"],
     summary:
       "Built the endless runner foundation for Potion Run, balancing pacing, obstacles, and progression on mobile.",
-    tags: ["C#", "Academic"],
+    tags: ["Unity", "C#", "Academic"],
     category: "Games",
   },
 ];
