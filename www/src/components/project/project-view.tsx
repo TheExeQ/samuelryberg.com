@@ -17,13 +17,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { ProjectsProps } from "@/types";
-import type { IconType } from "react-icons";
-import { SiUnity, SiUnrealengine } from "react-icons/si";
-
-const technologyIcons: Record<string, IconType> = {
-  "Unity Engine": SiUnity,
-  "Unreal Engine": SiUnrealengine,
-};
+import { technologies } from "@/config";
 
 export const ProjectView: FC<ProjectsProps> = ({ title, projects }) => {
   if (!projects.length) {
@@ -67,7 +61,9 @@ export const ProjectView: FC<ProjectsProps> = ({ title, projects }) => {
                       </h2>
                       <div className="flex space-x-2">
                         {project.technologies.map((tech, i) => {
-                          const Icon = technologyIcons[tech];
+                          const techInfo = technologies[tech];
+                          const Icon = techInfo?.icon;
+                          const label = techInfo?.name ?? tech;
                           return (
                             <Tooltip key={`${project.href}-${tech}-${i}`}>
                               <TooltipTrigger asChild>
@@ -78,12 +74,12 @@ export const ProjectView: FC<ProjectsProps> = ({ title, projects }) => {
                                   {Icon ? (
                                     <Icon className="h-4 w-4" />
                                   ) : (
-                                    <span className="text-xs">{tech}</span>
+                                    <span className="px-2 text-xs">{label}</span>
                                   )}
                                 </Badge>
                               </TooltipTrigger>
                               <TooltipContent>
-                                <p>{tech}</p>
+                                <p>{label}</p>
                               </TooltipContent>
                             </Tooltip>
                           );

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Link from "next/link";
 
-import { technologies, experiences } from "@/config";
+import { technologyList, experiences } from "@/config";
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -38,7 +38,7 @@ const About: FC = () => {
 
           <h3 className="mb-6 mt-12 text-2xl font-semibold">Skills</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {technologies.map((tech, index) => {
+            {technologyList.map((tech, index) => {
               const Icon = tech.icon;
 
               return (

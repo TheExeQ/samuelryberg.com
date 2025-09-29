@@ -43,7 +43,7 @@ export const projects: Project[] = [
     href: "warriors",
     title: "Warriors",
     image: WarriorsImage,
-    technologies: ["Unity Engine"],
+    technologies: ["Unity", "C#", "Perforce"],
     summary:
       "Shipped a fast-paced online arena brawler for Steam with bespoke combat systems and live multiplayer tooling.",
     tags: ["Multiplayer", "Unity", "C#", "Steam", "Professional"],
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     href: "rubber-bandits",
     title: "Rubber Bandits",
     image: RubberBanditsImage,
-    technologies: ["Unity Engine"],
+    technologies: ["Unity", "C#", "Perforce"],
     summary:
       "Delivered the physics-driven chaos behind Rubber Bandits, keeping party play polished across console and PC.",
     tags: ["Multiplayer", "Unity", "C#", "Steam", "Professional"],
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     href: "vipertrace",
     title: "Vipertrace",
     image: VipertraceImage,
-    technologies: [],
+    technologies: ["C++", "C#", "Perforce"],
     summary:
       "Led AI and navigation for a sci-fi FPS built in our custom Volt engine during my final year at The Game Assembly.",
     tags: ["Multiplayer", "Custom Engine", "C++", "C#", "Steam", "Academic"],
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     href: "ekaya-pebbles",
     title: "Ekaya & Pebbles",
     image: EkayaImage,
-    technologies: [],
+    technologies: ["C++", "C#", "Perforce"],
     summary:
       "Created third-person traversal and telekinetic companion systems in a bespoke engine for Ekaya & Pebbles.",
     tags: ["Custom Engine", "C++", "C#", "Academic"],
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     href: "spite-the-yellow-plague",
     title: "Spite: The Yellow Plague",
     image: SpiteImage,
-    technologies: [],
+    technologies: ["C++", "Perforce"],
     summary:
       "Built enemy navigation and tools while co-authoring the Volt engine for a dark dungeon crawler.",
     tags: ["Custom Engine", "C++", "Academic"],
@@ -96,7 +96,7 @@ export const projects: Project[] = [
     href: "bos-morning",
     title: "Bo's Morning",
     image: BoImage,
-    technologies: [],
+    technologies: ["C++", "Perforce"],
     summary:
       "Designed a top-down action adventure with handcrafted enemy behaviors to bring Bo's farm back to life.",
     tags: ["C++", "Academic"],
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     href: "bard-knight",
     title: "Bard Knight",
     image: BardKnightImage,
-    technologies: [],
+    technologies: ["C++", "Perforce"],
     summary:
       "Developed rhythm-driven platforming mechanics in collaboration with Ostra Grevie's music program.",
     tags: ["Custom Engine", "C++", "Academic"],
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     href: "cute-em-up",
     title: "Cute 'em up",
     image: CuteEmUpImage,
-    technologies: [],
+    technologies: ["C++", "Perforce"],
     summary:
       "Engineered arcade shooter systems and bullet-hell encounters in our first C++ project.",
     tags: ["Custom Engine", "C++", "Academic"],
@@ -126,7 +126,7 @@ export const projects: Project[] = [
     href: "hungry-house",
     title: "Hungry House",
     image: HungryHouseImage,
-    technologies: ["Unity Engine"],
+    technologies: ["Unity", "C#", "Perforce"],
     summary:
       "Designed award-winning mobile puzzle loops and creature animations during an eight-week sprint.",
     tags: ["Unity", "C#", "Academic"],
@@ -137,7 +137,7 @@ export const projects: Project[] = [
     href: "potion-run",
     title: "Potion Run",
     image: PotionRunImage,
-    technologies: ["Unity Engine"],
+    technologies: ["Unity", "C#", "Perforce"],
     summary:
       "Built the endless runner foundation for Potion Run, balancing pacing, obstacles, and progression on mobile.",
     tags: ["Unity", "C#", "Academic"],
