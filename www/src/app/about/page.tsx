@@ -72,7 +72,7 @@ const About: FC = () => {
           <h3 className="mb-6 mt-12 text-2xl font-semibold">Experience</h3>
           <div className="relative">
             <div
-              className="absolute bottom-6 left-4 top-6 w-px bg-border/60 sm:left-6"
+              className="absolute bottom-6 left-4 top-6 w-px bg-[color:color-mix(in_oklab,var(--foreground)_13%,transparent)] dark:bg-[color:color-mix(in_oklab,var(--foreground)_26%,transparent)] sm:left-6"
               aria-hidden="true"
             />
             <div className="space-y-6">

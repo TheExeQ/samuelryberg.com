@@ -28,18 +28,18 @@ type ExtendedProject = Project &
 
 const projectsWithMetadata: ExtendedProject[] = projectList.filter(
   (project): project is ExtendedProject =>
-    Boolean(project.summary && project.tags && project.category)
+    Boolean(project.summary && project.tags && project.category),
 );
 
 const featuredProjectsData = projectsWithMetadata.filter(
-  (project) => project.featured
+  (project) => project.featured,
 );
 
 const tagOptionsData = Array.from(
   projectsWithMetadata.reduce((acc, project) => {
     project.tags.forEach((tag) => acc.add(tag));
     return acc;
-  }, new Set<string>())
+  }, new Set<string>()),
 ).sort((a, b) => a.localeCompare(b));
 
 const Work: FC = () => {
@@ -70,7 +70,7 @@ const Work: FC = () => {
     }
 
     return projectsWithMetadata.filter((project) =>
-      selectedTags.every((tag) => project.tags.includes(tag))
+      selectedTags.every((tag) => project.tags.includes(tag)),
     );
   }, [selectedTags]);
 
@@ -79,21 +79,21 @@ const Work: FC = () => {
       categoryOrder.map((category) => ({
         category,
         projects: visibleProjects.filter(
-          (project) => project.category === category
+          (project) => project.category === category,
         ),
       })),
-    [visibleProjects]
+    [visibleProjects],
   );
 
   const hasVisibleProjects = categorizedProjects.some(
-    (group) => group.projects.length > 0
+    (group) => group.projects.length > 0,
   );
 
   const handleTagToggle = (tag: string) => {
     setSelectedTags((current) =>
       current.includes(tag)
         ? current.filter((item) => item !== tag)
-        : [...current, tag]
+        : [...current, tag],
     );
   };
 
@@ -119,15 +119,16 @@ const Work: FC = () => {
               <CarouselContent>
                 {featuredProjectsData.map((project, index) => (
                   <CarouselItem key={project.href}>
-                    <Card className="overflow-hidden border-0 shadow-2xl">
-                      <CardContent className="relative h-[360px] overflow-hidden rounded-2xl bg-muted p-0 sm:h-[420px] lg:h-[520px]">
+                    <Card className="overflow-hidden bg-background border-0 shadow-none">
+                      <CardContent className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-muted/20 p-0 sm:aspect-[16/9]">
                         <Image
                           src={project.image}
                           alt={`${project.title} preview`}
                           fill
                           priority={index === 0}
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 960px"
-                          className="object-cover"
+                          className="object-cover object-center"
+                          style={{ objectFit: "cover" }}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                         <div className="absolute inset-x-0 bottom-0 flex flex-col gap-4 p-6 text-white sm:p-8">
@@ -184,7 +185,7 @@ const Work: FC = () => {
                     "h-2.5 w-2.5 rounded-full transition-colors",
                     currentSlide === index
                       ? "bg-primary"
-                      : "bg-muted-foreground/30 hover:bg-muted-foreground/60"
+                      : "bg-muted-foreground/30 hover:bg-muted-foreground/60",
                   )}
                   aria-label={`Go to slide ${index + 1}`}
                 />
@@ -237,7 +238,7 @@ const Work: FC = () => {
                   title={group.category}
                   projects={group.projects}
                 />
-              ) : null
+              ) : null,
             )
           ) : (
             <div className="rounded-lg border border-dashed border-muted-foreground/40 p-12 text-center">
