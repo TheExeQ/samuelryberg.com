@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 
 import BackgroundGrid from "@/components/background-grid";
 import { PortfolioProject } from "@/components";
-import { projectsData } from "@/config/projects";
+import { projects, projectsData } from "@/config/projects";
 
 type ProjectPageProps = {
   params: Promise<{
@@ -25,6 +25,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <PortfolioProject
         title={projectData.title}
         description={projectData.description}
+        technologies={projects.find((project) => project.href === projectId)?.technologies}
         additional={projectData.additional}
         trailerUrl={projectData.trailerUrl}
         sections={projectData.sections}

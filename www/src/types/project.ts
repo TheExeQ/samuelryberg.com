@@ -31,6 +31,7 @@ export interface PortfolioProjectProps {
   title: string;
   description: JSX.Element;
   trailerUrl: string;
+  technologies?: string[];
   additional?: JSX.Element;
   sections?: ProjectSection[];
 }
