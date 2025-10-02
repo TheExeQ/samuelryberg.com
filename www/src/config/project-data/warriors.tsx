@@ -13,10 +13,15 @@ export const Warriors: PortfolioProjectProps = {
   ),
   trailerUrl: "https://www.youtube.com/embed/kiYflJp1yoA",
   additional: (
-    <iframe
-      src="https://store.steampowered.com/widget/3268430"
-      width="100%"
-      height="200"
-    />
+    <>
+      <iframe
+        src="https://store.steampowered.com/widget/3268430"
+        width="100%"
+        height="200"
+      />
+      <p className="mt-3 text-sm italic text-muted-foreground">
+        Due to NDA obligations, I am unable to publicly detail my contributions.
+      </p>
+    </>
   ),
 };

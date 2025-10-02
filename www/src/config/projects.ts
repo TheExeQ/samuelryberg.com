@@ -45,7 +45,7 @@ export const projects: Project[] = [
     image: WarriorsImage,
     technologies: ["Unity", "C#", "Perforce"],
     summary:
-      "Shipped a fast-paced online arena brawler for Steam with bespoke combat systems and live multiplayer tooling.",
+      "Developed a fast-paced online arena brawler for Steam with custom combat systems and live multiplayer tooling.",
     tags: ["Multiplayer", "Unity", "C#", "Steam", "Professional"],
     category: "Games",
     featured: true,
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     image: RubberBanditsImage,
     technologies: ["Unity", "C#", "Perforce"],
     summary:
-      "Delivered the physics-driven chaos behind Rubber Bandits, keeping party play polished across console and PC.",
+      "Supported live development by expanding Rubber Bandits' pre-game rule customization across console and PC releases.",
     tags: ["Multiplayer", "Unity", "C#", "Steam", "Professional"],
     category: "Games",
     featured: true,
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     image: EkayaImage,
     technologies: ["C++", "C#", "Perforce"],
     summary:
-      "Created third-person traversal and telekinetic companion systems in a bespoke engine for Ekaya & Pebbles.",
+      "Created third-person traversal and telekinetic companion systems in a our custom Volt engine for Ekaya & Pebbles.",
     tags: ["Custom Engine", "C++", "C#", "Academic"],
     category: "Games",
   },
