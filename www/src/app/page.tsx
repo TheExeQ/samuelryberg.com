@@ -19,18 +19,21 @@ const Home: FC = () => (
         {/* Text Section */}
         <div className="flex-1 space-y-6 text-center lg:text-left">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-            Welcome to My Portfolio
+            DevOps engineer for dependable releases
           </h1>
           <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl lg:mx-0">
-            I&apos;m a Software Engineer specializing in DevOps and backend
-            engineering. Let&apos;s build something amazing!
+            I&apos;m Samuel Ryberg, a DevOps-focused software engineer who helps
+            teams cut deploy time while keeping releases predictable.
+          </p>
+          <p className="mx-auto max-w-[600px] text-sm text-muted-foreground md:text-base lg:mx-0">
+            Focused on CI/CD automation, observability, and developer experience.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <Button size="lg" asChild>
-              <Link href="/projects">View Work</Link>
+              <Link href="/projects">See Production Work</Link>
             </Button>
             <Button size="lg" variant="secondary" asChild>
-              <Link href="/about">About Me</Link>
+              <Link href="/contact">Let&apos;s Talk</Link>
             </Button>
           </div>
         </div>
