@@ -26,14 +26,15 @@ const Home: FC = () => (
             teams cut deploy time while keeping releases predictable.
           </p>
           <p className="mx-auto max-w-[600px] text-sm text-muted-foreground md:text-base lg:mx-0">
-            Focused on CI/CD automation, observability, and developer experience.
+            Focused on CI/CD automation, observability, and developer
+            experience.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <Button size="lg" asChild>
-              <Link href="/projects">See Production Work</Link>
+              <Link href="/projects">View Work</Link>
             </Button>
             <Button size="lg" variant="secondary" asChild>
-              <Link href="/contact">Let&apos;s Talk</Link>
+              <Link href="/contact">Contact Me</Link>
             </Button>
           </div>
         </div>

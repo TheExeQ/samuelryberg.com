@@ -2,6 +2,27 @@ import { Experience } from "@/types";
 
 export const experiences: Array<Experience> = [
   {
+    year: "Apr 2025 - Jul 2025",
+    title: "Game Programmer",
+    company: "Eddaheim",
+    description: (
+      <ul className="list-disc space-y-2 px-4">
+        <li>
+          Learned <span className="font-bold">Unreal Engine</span>,
+          prototyping gameplay systems and team workflows.
+        </li>
+        <li>
+          Set up and maintained <span className="font-bold">Perforce</span>{" "}
+          depots, ensuring reliable version control for the team.
+        </li>
+        <li>
+          Managed the project build and deployment pipeline for{" "}
+          <span className="font-bold">Steam</span>, streamlining releases.
+        </li>
+      </ul>
+    ),
+  },
+  {
     year: "Aug 2023 - Mar 2025",
     title: "Associate Programmer",
     company: "Flashbulb Games",
