@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import Link from "next/link";
+import { FileText } from "lucide-react";
 
 import { technologyList, experiences } from "@/config";
 
@@ -33,6 +34,17 @@ const About: FC = () => {
             </Button>
             <Button size="lg" variant="secondary" asChild>
               <Link href="/contact">Contact Me</Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <Link
+                href="/Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <FileText className="h-4 w-4" aria-hidden="true" />
+                <span>View Resume</span>
+              </Link>
             </Button>
           </div>
 
