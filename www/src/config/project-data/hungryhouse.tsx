@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Tooltip,
   TooltipContent,
@@ -39,11 +40,13 @@ export const HungryHouse: PortfolioProjectProps = {
               rel="noopener noreferrer"
               aria-label="Mobile Game of the Year and Best Art nominations at the Swedish Game Awards 2022"
             >
-              <img
+              <Image
                 src="/awards/sga-finalist.webp"
                 alt="Swedish Game Awards 2022 finalist badge"
                 className="h-full w-full object-contain"
                 loading="lazy"
+                width={310}
+                height={310}
               />
             </a>
           </TooltipTrigger>
@@ -60,11 +63,13 @@ export const HungryHouse: PortfolioProjectProps = {
               rel="noopener noreferrer"
               aria-label="Mobile Game of the Year finalist at The Rookies Awards 2022"
             >
-              <img
+              <Image
                 src="/awards/rookies-finalist.webp"
                 alt="The Rookies Awards 2022 finalist badge"
                 className="h-full w-full object-contain"
                 loading="lazy"
+                width={1024}
+                height={1071}
               />
             </a>
           </TooltipTrigger>
@@ -81,11 +86,13 @@ export const HungryHouse: PortfolioProjectProps = {
               rel="noopener noreferrer"
               aria-label="Mobile Game of the Year People's Choice winner at The Rookies Awards 2022"
             >
-              <img
+              <Image
                 src="/awards/rookies-goty.webp"
                 alt="The Rookies Awards 2022 Mobile Game of the Year badge"
                 className="h-full w-full object-contain"
                 loading="lazy"
+                width={1024}
+                height={1071}
               />
             </a>
           </TooltipTrigger>
