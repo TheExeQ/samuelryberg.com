@@ -18,12 +18,11 @@ const Home: FC = () => (
       <CardContent className="flex min-h-screen flex-col items-center justify-center gap-8 px-4 pb-12 pt-20 sm:px-6 sm:pt-24 md:pt-32 lg:flex-row lg:px-8 lg:pt-0">
         {/* Text Section */}
         <div className="flex-1 space-y-6 text-center lg:text-left">
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-            DevOps engineer for dependable releases
+          <h1 className="text-4xl font-bold sm:text-5xl xl:text-6xl/none">
+            Hi, I&apos;m Samuel! 👋🏼
           </h1>
           <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl lg:mx-0">
-            I&apos;m Samuel Ryberg, a DevOps-focused software engineer who helps
-            teams cut deploy time while keeping releases predictable.
+            I create automated pipelines that help teams ship faster without surprises, tightening feedback loops and smoothing every release.
           </p>
           <p className="mx-auto max-w-[600px] text-sm text-muted-foreground md:text-base lg:mx-0">
             Focused on CI/CD automation, observability, and developer
@@ -34,7 +33,7 @@ const Home: FC = () => (
               <Link href="/projects">View Work</Link>
             </Button>
             <Button size="lg" variant="secondary" asChild>
-              <Link href="/contact">Contact Me</Link>
+              <Link href="/about">More About Me</Link>
             </Button>
           </div>
         </div>

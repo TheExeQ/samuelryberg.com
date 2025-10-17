@@ -15,18 +15,70 @@ const About: FC = () => {
 
       <section className="container mx-auto px-4 py-16 pt-32">
         <div className="relative z-10 mx-auto max-w-4xl rounded-3xl border border-border/60 bg-background/95 p-10 text-center shadow-xl backdrop-blur">
-          <h2 className="mb-8 text-3xl font-bold">About Me</h2>
+          <h2 className="mb-4 text-4xl font-bold sm:text-5xl">About Me</h2>
+          <div className="mb-8 flex items-center justify-center gap-6 text-sm font-semibold uppercase tracking-wide text-primary/80">
+            <a
+              href="#skills"
+              className="transition-colors hover:text-primary focus-visible:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+            >
+              Skills
+            </a>
+            <span className="h-3 w-px bg-border" aria-hidden="true" />
+            <a
+              href="#experience"
+              className="transition-colors hover:text-primary focus-visible:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+            >
+              Experience
+            </a>
+          </div>
 
-          <p className="mb-12 text-lg text-muted-foreground">
-            I&apos;m a Software Engineer from Sweden who enjoys creating games.
-            In my free time, I like to cook and make/learn music.
-            <br />
-            <br />
-            I&apos;m always looking to learn new things and expand my knowledge
-            in game development. I&apos;m fascinated by the constantly evolving
-            technology in this field and I&apos;m always eager to stay on top of
-            the latest trends and techniques.
-          </p>
+          <div className="mb-12 space-y-6 text-lg text-muted-foreground">
+            <p>
+              Outside of work, I spend most of my time cooking or exploring
+              music, though I&apos;ll admit I&apos;m a much better cook than
+              musician. Cooking has become a real passion of mine, and I even
+              built{" "}
+              <a
+                href="https://food.samuelryberg.com"
+                className="font-medium text-primary underline underline-offset-4 transition-colors hover:text-primary/80"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                a small recipe website
+              </a>{" "}
+              where I occasionally share my favorite dishes.
+            </p>
+            <p>
+              I live in Malmö but grew up in Helsingborg. I enjoy traveling and
+              experiencing new cultures whenever I can, and I&apos;ve made a
+              habit of creating short travel montages to look back on later. You
+              can find a few of them in{" "}
+              <a
+                href="https://youtube.com/playlist?list=PL7c_fMDztcngV8bVy3eanumZa1VbmHIHL&si=UNQ5BF-rjgLQLNG8"
+                className="font-medium text-primary underline underline-offset-4 transition-colors hover:text-primary/80"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                my travel playlist on YouTube
+              </a>
+              .
+            </p>
+            <p>
+              Friends and teammates would likely describe me as reliable, calm,
+              curious, humble, and a good listener. One of my proudest
+              engineering achievements was optimizing the network traffic for a
+              multiplayer game project. I implemented improvements that reduced
+              bandwidth usage by about 60%.
+            </p>
+            <p>
+              In my work, I value clear communication, transparency, and
+              approachability. I strive to build maintainable, scalable, and
+              secure systems, and I&apos;m always looking for ways to learn and
+              improve. Curiosity drives much of what I do, both personally and
+              professionally, and I enjoy continuously finding opportunities to
+              grow and refine my craft.
+            </p>
+          </div>
 
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <Button size="lg" asChild>
@@ -48,7 +100,12 @@ const About: FC = () => {
             </Button>
           </div>
 
-          <h3 className="mb-6 mt-12 text-2xl font-semibold">Skills</h3>
+          <h3
+            id="skills"
+            className="mb-6 mt-12 text-2xl font-semibold scroll-mt-[40vh]"
+          >
+            Skills
+          </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {technologyList.map((tech, index) => {
               const Icon = tech.icon;
@@ -81,7 +138,12 @@ const About: FC = () => {
             })}
           </div>
 
-          <h3 className="mb-6 mt-12 text-2xl font-semibold">Experience</h3>
+          <h3
+            id="experience"
+            className="mb-6 mt-12 text-2xl font-semibold scroll-mt-[40vh]"
+          >
+            Experience
+          </h3>
           <div className="relative">
             <div
               className="absolute bottom-6 left-4 top-6 w-px bg-[color:color-mix(in_oklab,var(--foreground)_13%,transparent)] dark:bg-[color:color-mix(in_oklab,var(--foreground)_26%,transparent)] sm:left-6"
