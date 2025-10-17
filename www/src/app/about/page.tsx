@@ -34,7 +34,7 @@ const About: FC = () => {
 
           <div className="mb-12 space-y-6 text-lg text-muted-foreground">
             <p>
-              Outside of work, I spend most of my time cooking or exploring
+              Outside of work, I spend a lot of my time cooking or exploring
               music, though I&apos;ll admit I&apos;m a much better cook than
               musician. Cooking has become a real passion of mine, and I even
               built{" "}
@@ -49,10 +49,10 @@ const About: FC = () => {
               where I occasionally share my favorite dishes.
             </p>
             <p>
-              I live in Malmö but grew up in Helsingborg. I enjoy traveling and
-              experiencing new cultures whenever I can, and I&apos;ve made a
-              habit of creating short travel montages to look back on later. You
-              can find a few of them in{" "}
+              I currently live in Malmö but grew up in Helsingborg, Sweden. I
+              enjoy traveling and experiencing new cultures whenever I can, and
+              I&apos;ve made a habit of creating short travel montages to look
+              back on later. You can find a few of them in{" "}
               <a
                 href="https://youtube.com/playlist?list=PL7c_fMDztcngV8bVy3eanumZa1VbmHIHL&si=UNQ5BF-rjgLQLNG8"
                 className="font-medium text-primary underline underline-offset-4 transition-colors hover:text-primary/80"
@@ -64,7 +64,7 @@ const About: FC = () => {
               .
             </p>
             <p>
-              Friends and teammates would likely describe me as reliable, calm,
+              Friends and colleagues would likely describe me as reliable, calm,
               curious, humble, and a good listener. One of my proudest
               engineering achievements was optimizing the network traffic for a
               multiplayer game project. I implemented improvements that reduced
