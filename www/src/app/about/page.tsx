@@ -36,17 +36,7 @@ const About: FC = () => {
             <p>
               Outside of work, I spend a lot of my time cooking or exploring
               music, though I&apos;ll admit I&apos;m a much better cook than
-              musician. Cooking has become a real passion of mine, and I even
-              built{" "}
-              <a
-                href="https://food.samuelryberg.com"
-                className="font-medium text-primary underline underline-offset-4 transition-colors hover:text-primary/80"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                a small recipe website
-              </a>{" "}
-              where I occasionally share my favorite dishes.
+              musician
             </p>
             <p>
               I currently live in Malmö but grew up in Helsingborg, Sweden. I

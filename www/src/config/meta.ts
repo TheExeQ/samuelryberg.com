@@ -3,7 +3,7 @@ import { Meta } from "@/types";
 export const meta: Meta = {
   title: "Samuel Ryberg | Official Website",
   author: "Samuel Ryberg",
-  email: "samuel.ryberg@gmail.com",
+  email: "contact@samuelryberg.com",
   description: "Explore Samuel Ryberg's projects, skills, and experience.",
   keywords: [
     "Samuel Ryberg",
