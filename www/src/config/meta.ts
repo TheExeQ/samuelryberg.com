@@ -5,6 +5,7 @@ export const meta: Meta = {
   author: "Samuel Ryberg",
   email: "contact@samuelryberg.com",
   description: "Explore Samuel Ryberg's projects, skills, and experience.",
+  role: "DevOps Engineer",
   keywords: [
     "Samuel Ryberg",
     "Game",

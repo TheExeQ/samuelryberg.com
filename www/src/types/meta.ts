@@ -3,6 +3,7 @@ export interface Meta {
   author: string;
   email: string;
   description: string;
+  role: string;
   keywords: Array<string>;
   accounts: {
     github: {

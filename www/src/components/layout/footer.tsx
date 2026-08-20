@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Link from "next/link";
 
-import { footer, nav } from "@/config";
+import { footer, nav, meta } from "@/config";
 
 const Footer: FC = () => {
   const currentYear = new Date().getFullYear();
@@ -15,7 +15,7 @@ const Footer: FC = () => {
               <h1>Samuel Ryberg</h1>
             </div>
           </div>
-          <div>Software Engineer</div>
+          <div>{meta.role}</div>
           <div className="mt-2">
             &copy; {currentYear} Samuel Ryberg, All rights reserved.
           </div>

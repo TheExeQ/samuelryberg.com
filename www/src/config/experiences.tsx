@@ -2,14 +2,42 @@ import { Experience } from "@/types";
 
 export const experiences: Array<Experience> = [
   {
+    year: "Sep 2025 - Present",
+    title: "DevOps Engineering Student",
+    company: "Jensen YH",
+    description: (
+      <ul className="list-disc space-y-2 px-4">
+        <li>
+          Learning <span className="font-bold">CI/CD</span> practices and
+          implementing automated deployment pipelines.
+        </li>
+        <li>
+          Developing skills in <span className="font-bold">Java</span>,{" "}
+          <span className="font-bold">Python</span>, and{" "}
+          <span className="font-bold">SQL</span> for infrastructure automation.
+        </li>
+        <li>
+          Working with <span className="font-bold">Terraform</span> and{" "}
+          <span className="font-bold">Ansible</span> for infrastructure as code
+          and configuration management.
+        </li>
+        <li>
+          Studying <span className="font-bold">Docker</span> and{" "}
+          <span className="font-bold">Kubernetes</span> for container
+          orchestration and deployment strategies.
+        </li>
+      </ul>
+    ),
+  },
+  {
     year: "Apr 2025 - Jul 2025",
     title: "Game Programmer",
     company: "Eddaheim",
     description: (
       <ul className="list-disc space-y-2 px-4">
         <li>
-          Learned <span className="font-bold">Unreal Engine</span>,
-          prototyping gameplay systems and team workflows.
+          Learned <span className="font-bold">Unreal Engine</span>, prototyping
+          gameplay systems and team workflows.
         </li>
         <li>
           Set up and maintained <span className="font-bold">Perforce</span>{" "}
