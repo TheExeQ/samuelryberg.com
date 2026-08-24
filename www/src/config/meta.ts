@@ -20,8 +20,8 @@ export const meta: Meta = {
   ],
   accounts: {
     github: {
-      username: "ExeQ",
-      repo: "https://github.com/TheExeQ",
+      username: "SamuelRyberg",
+      repo: "https://github.com/samuelryberg",
     },
     linkedin: {
       username: "samuelryberg",
